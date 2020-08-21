@@ -1,0 +1,11 @@
+{
+  "dataTypeID": "遥测查询编号",
+  "tableName": {
+    "codeID": "String",
+    "start": "2020-08-01 01:00:00",
+    "end": "2020-08-01 01:01:00",
+    "originalValue": "Long",
+    "engineerValue": "String",
+    "stateValue": "String"
+  }
+}

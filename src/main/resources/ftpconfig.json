@@ -1,0 +1,28 @@
+{
+  "ftpHost": "192.168.2.53",
+  "ftpPort": "21",
+  "module": {
+    "tx": {
+      "username": "tongx",
+      "password": "tongx"
+    },
+    "xs": {
+      "username": "xians",
+      "password": "xians"
+    },
+    "dg": {
+      "username": "dingg",
+      "password": "dingg"
+    },
+    "sjcs": {
+      "username": "sjcs",
+      "password": "sjcs1110"
+    },
+    "sjgl": {
+      "username": "sjgl",
+      "password": "sjgl"
+    }
+  },
+  "localWorkPath":"D:\\IdeaProjects\\centispacesg\\FTP下载测试"
+}
+
