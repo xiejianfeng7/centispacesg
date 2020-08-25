@@ -26,3 +26,10 @@ https://www.cnblogs.com/jinjiyese153/p/6796668.html
 
 1. 将数据库中数据下载到csv格式文件中
 2. 文件获取，获取最新文件，获取某段时间的文件。
+
+
+git作为支持分布式版本管理的工具，它管理的库（repository）分为本地库、远程库。
+git commit操作的是本地库，git push操作的是远程库。
+
+git commit是将本地修改过的文件提交到本地库中。
+git push是将本地库中的最新信息发送给远程库。
