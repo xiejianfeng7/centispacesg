@@ -13,6 +13,7 @@ import java.util.List;
 public class QueryCondition {
     private Integer message;
     private Integer dataType;
+    private Integer StationFlag;
     private List<String> param;
     private Integer taskID;
     private Integer freq;
@@ -25,9 +26,10 @@ public class QueryCondition {
     public QueryCondition() {
     }
 
-    public QueryCondition(Integer message, Integer dataType, List<String> param, Integer taskID, Integer freq, DateTime start, DateTime end, String source, String eventType, String eventNum) {
+    public QueryCondition(Integer message, Integer dataType, Integer stationFlag, List<String> param, Integer taskID, Integer freq, DateTime start, DateTime end, String source, String eventType, String eventNum) {
         this.message = message;
         this.dataType = dataType;
+        StationFlag = stationFlag;
         this.param = param;
         this.taskID = taskID;
         this.freq = freq;
@@ -52,6 +54,14 @@ public class QueryCondition {
 
     public void setDataType(Integer dataType) {
         this.dataType = dataType;
+    }
+
+    public Integer getStationFlag() {
+        return StationFlag;
+    }
+
+    public void setStationFlag(Integer stationFlag) {
+        StationFlag = stationFlag;
     }
 
     public List<String> getParam() {

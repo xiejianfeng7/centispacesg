@@ -66,11 +66,11 @@ public class ProFileRequest {
         try {
             // 根据用户在EMBL包头打的设备标识锁定用户FTP账户
             clientUtil = FtpClientUtil.getInstance("src/main/resources/ftpconfig.json", ByteStringUtil.decToHex(emblHeader.getDeviceID(), 4));
-            String localPath = ByteStringUtil.decToHex(fileHeader.getDataType(), 8) + "/" + emblHeader.getTaskID() + "/" + fileHeader.getStationFlag() + dateTime.year() + "/" + String.format("%02d", dateTime.month() + 1);
+            String localPath = ByteStringUtil.decToHex(fileHeader.getDataType(), 8) + File.separator + emblHeader.getTaskID() + File.separator + fileHeader.getStationFlag() + dateTime.year() + File.separator + String.format("%02d", dateTime.month() + 1);
             downLoadFile = clientUtil.downLoadFile(file.getParent(), file.getName(), localPath);
 
             // 将最新文件存放在一个单独为目录中
-            String newestPath = clientUtil.localWorkPath + "/" + "newFile" + ByteStringUtil.decToHex(fileHeader.getDataType(), 8) + "/" + emblHeader.getTaskID() + "/" + fileHeader.getStationFlag();
+            String newestPath = clientUtil.localWorkPath + File.separator + "newFile" + ByteStringUtil.decToHex(fileHeader.getDataType(), 8) + File.separator + emblHeader.getTaskID() + File.separator + fileHeader.getStationFlag();
             File newest = new File(newestPath);
             if (deleteDir(newest)) {
                 System.out.println("文件夹清空成功！");
@@ -79,7 +79,7 @@ public class ProFileRequest {
                 newest.mkdirs();
             }
             fis = new FileInputStream(downLoadFile);
-            fos = new FileOutputStream(new File(newest + "/" + file.getName()));
+            fos = new FileOutputStream(new File(newest + File.separator + file.getName()));
             int length = 0;
             byte[] readData = new byte[65535];
             while ((length = fis.read(readData)) != -1) {
