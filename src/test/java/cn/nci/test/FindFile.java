@@ -7,6 +7,7 @@ import cn.nci.domain.EMBLHeader;
 import cn.nci.domain.QueryCondition;
 import cn.nci.parse.ProFileRequest;
 import cn.nci.util.ByteStringUtil;
+import cn.nci.util.FtpClientUtil;
 
 import java.io.File;
 import java.math.BigDecimal;
@@ -27,20 +28,32 @@ public class FindFile {
         QueryCondition queryCondition = new QueryCondition();
         queryCondition.setDataType(0x004F0104);
         queryCondition.setStationFlag(514);
-        queryCondition.setStart(DateUtil.date(Convert.toDate("2019-12-31 10:19:00")));
+        queryCondition.setStart(DateUtil.date(Convert.toDate("2019-01-31 10:19:00")));
         queryCondition.setEnd(DateUtil.date(Convert.toDate("2020-01-02 20:19:00")));
         // 测试
         // 1、根据用户查询时间查找文件
         List<File> fileList = findFile(emblHeader, queryCondition);
-        for (File file : fileList) {
-            System.out.println(file.getAbsolutePath());
-        }
-        System.out.println("共查到："+fileList.size()+"个文件");
+
 
         // 2、将查找的文件上传到指定的FTP地址
+        FtpClientUtil clientUtil = null;
+        try {
 
+            for (File file : fileList) {
+                // 此处连接FTP次数与数据文件个数成正比，要优化 2020年8月25日17:54:36
+
+                clientUtil = FtpClientUtil.getInstance("src/main/resources/ftpconfig.json", "sjgl");
+//                System.out.println(file.getAbsolutePath());
+                System.out.println(file.getParent());
+                System.out.println(file.getName());
+                clientUtil.uploadFtpFile(file.getParent(), file.getName(), "/");
+                clientUtil.close();
+            }
+            System.out.println("共查到：" + fileList.size() + "个文件");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         // 3、给用户发送获取应答消息
-
     }
 
     // 00220011/503/514/2020/08/<数据类型>_<业务类型>_<源地址>_<开始时间串>_<结束时间串>.txt
@@ -61,10 +74,10 @@ public class FindFile {
 
                 for (String s : list) {
                     // 拼接文件夹
-                    String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator + emblHeader.getTaskID() + File.separator + queryCondition.getStationFlag()+File.separator+s+File.separator;
+                    String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator + emblHeader.getTaskID() + File.separator + queryCondition.getStationFlag() + File.separator + s + File.separator;
                     File file = new File(filePath);
-                    if (file.exists() && file.isDirectory()){
-                        fileList.addAll(folderMethod(file,startTime,endTime));
+                    if (file.exists() && file.isDirectory()) {
+                        fileList.addAll(folderMethod(file, startTime, endTime));
                     }
                 }
 
@@ -80,16 +93,14 @@ public class FindFile {
     }
 
 
-
-
-    public static List<File> folderMethod(File file, DateTime startTime,DateTime endTime) {
+    public static List<File> folderMethod(File file, DateTime startTime, DateTime endTime) {
         List<File> list = new ArrayList<>();
         File[] files = file.listFiles();
         ProFileRequest proFileRequest = new ProFileRequest();
         for (File fileName : files) {
             // 获取文件基准时间
             DateTime dateTime = proFileRequest.getFileBaseTime(fileName.getName());
-            if (dateTime.getTime() >= startTime.getTime()  && dateTime.getTime() <= endTime.getTime()){
+            if (dateTime.getTime() >= startTime.getTime() && dateTime.getTime() <= endTime.getTime()) {
                 list.add(fileName);
             }
         }

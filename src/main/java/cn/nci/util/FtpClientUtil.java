@@ -215,7 +215,7 @@ public class FtpClientUtil {
     public void uploadFtpFile(String uploadFilePath, String fileName, String ftpWorkPath) throws RuntimeException {
         FileInputStream fis = null;
         try {
-            File srcFile = new File(uploadFilePath + fileName);
+            File srcFile = new File(uploadFilePath + File.separator + fileName);
             fis = new FileInputStream(srcFile);
             //设置上传目录
             ftpClient.changeWorkingDirectory("/" + ftpWorkPath);
