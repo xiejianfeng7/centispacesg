@@ -60,6 +60,9 @@ public class FindFileTest {
 //                System.out.println(file.getName());
 //                System.out.println(file.getAbsolutePath());
                 stringBuilder.append(ftpHost + file.getName() + ";");
+                if (fileList.size()>=1){
+                    stringBuilder.replace(stringBuilder.length() - 1, stringBuilder.length(), "");
+                }
                 clientUtil.uploadFtpFile(file.getParent(), file.getName(), "/");
                 Byte flag = 1;
                 getReplyMessage.setReplyFlag(flag);
@@ -68,8 +71,8 @@ public class FindFileTest {
             System.out.println("共查到：" + fileList.size() + "个文件");
             getReplyMessage.setFileCount((short) fileList.size());
             getReplyMessage.setPathCollection(stringBuilder);
-            System.out.println(stringBuilder.toString());
-            System.out.println(stringBuilder.length());
+//            System.out.println(stringBuilder.toString());
+//            System.out.println(stringBuilder.length());
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -62,6 +62,10 @@ public class ProGetRequest {
 //                System.out.println(file.getName());
 //                System.out.println(file.getAbsolutePath());
                 stringBuilder.append(ftpHost + file.getName() + ";");
+                // 删除最后一个;号
+                if (fileList.size()>=1){
+                    stringBuilder.replace(stringBuilder.length() - 1, stringBuilder.length(), "");
+                }
                 clientUtil.uploadFtpFile(file.getParent(), file.getName(), "/");
                 Byte flag = 1;
                 getReplyMessage.setReplyFlag(flag);

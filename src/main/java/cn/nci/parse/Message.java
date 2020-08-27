@@ -26,7 +26,7 @@ public class Message {
      */
     public static void getReplyMessage(EMBLHeader emblHeader, GetReplyMessage getReplyMessage, int replyLength, InetAddress address, int port) {
         byte[] sendPackage = new byte[65535];
-        byte[] fillEMBLMessageHeader = fillEMBLMessageHeader(emblHeader.getTaskID(), 0x00120201, 4 + replyLength);
+        byte[] fillEMBLMessageHeader = fillEMBLMessageHeader(emblHeader.getTaskID(), 0x00120201, replyLength);
         System.arraycopy(fillEMBLMessageHeader, 0, sendPackage, 0, 28);
         ByteUtil.writeIntL(sendPackage, getReplyMessage.getDataType(), 28);
         ByteUtil.writeShortL(sendPackage, getReplyMessage.getMessage(), 32);
