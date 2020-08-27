@@ -391,7 +391,6 @@ public class ByteUtil {
 	 * byte[]转换为String（1个byte转换为1个字符）
 	 * @param b 
 	 * @param index 从数组b中获取String的起始位置
-	 * @param length 要获取的String的长度
 	 * @return String
 	*/
 	public static void writeString(byte[] b, int index, String str) {
