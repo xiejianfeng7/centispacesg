@@ -4,16 +4,25 @@ import cn.hutool.core.convert.Convert;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
 import cn.nci.domain.EMBLHeader;
+import cn.nci.domain.GetReplyMessage;
 import cn.nci.domain.QueryCondition;
+import cn.nci.domain.SendAddress;
+import cn.nci.parse.Message;
 import cn.nci.parse.ProFileRequest;
+import cn.nci.socket.GetSendAddress;
 import cn.nci.util.ByteStringUtil;
 import cn.nci.util.FtpClientUtil;
 
 import java.io.File;
 import java.math.BigDecimal;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
 
 /**
  * @program: centispacesg
@@ -21,15 +30,16 @@ import java.util.*;
  * @author: xiejianfeng
  * @create: 2020-08-25 15:03
  */
-public class FindFile {
+public class FindFileTest {
     public static void main(String[] args) throws ParseException {
         EMBLHeader emblHeader = new EMBLHeader();
         emblHeader.setTaskID(503);
         QueryCondition queryCondition = new QueryCondition();
+        queryCondition.setMessage((short)1000);
         queryCondition.setDataType(0x004F0104);
         queryCondition.setStationFlag(514);
-        queryCondition.setStart(DateUtil.date(Convert.toDate("2019-01-31 10:19:00")));
-        queryCondition.setEnd(DateUtil.date(Convert.toDate("2020-01-02 20:19:00")));
+        queryCondition.setStart(DateUtil.date(Convert.toDate("2020-05-01 10:19:00")));
+        queryCondition.setEnd(DateUtil.date(Convert.toDate("2020-05-01 20:19:00")));
         // 测试
         // 1、根据用户查询时间查找文件
         List<File> fileList = findFile(emblHeader, queryCondition);
@@ -37,23 +47,47 @@ public class FindFile {
 
         // 2、将查找的文件上传到指定的FTP地址
         FtpClientUtil clientUtil = null;
+        StringBuilder stringBuilder = new StringBuilder();
+        GetReplyMessage getReplyMessage = new GetReplyMessage();
+        getReplyMessage.setDataType(queryCondition.getDataType());
+        getReplyMessage.setMessage(queryCondition.getMessage());
         try {
-
+            clientUtil = FtpClientUtil.getInstance("src/main/resources/ftpconfig.json", "sjgl");
+            String ftpHost = "ftp://" + clientUtil.ftpHost + "/";
             for (File file : fileList) {
                 // 此处连接FTP次数与数据文件个数成正比，要优化 2020年8月25日17:54:36
-
-                clientUtil = FtpClientUtil.getInstance("src/main/resources/ftpconfig.json", "sjgl");
+//                System.out.println(file.getParent());
+//                System.out.println(file.getName());
 //                System.out.println(file.getAbsolutePath());
-                System.out.println(file.getParent());
-                System.out.println(file.getName());
+                stringBuilder.append(ftpHost + file.getName() + ";");
                 clientUtil.uploadFtpFile(file.getParent(), file.getName(), "/");
-                clientUtil.close();
+                Byte flag = 1;
+                getReplyMessage.setReplyFlag(flag);
             }
+            clientUtil.close();
             System.out.println("共查到：" + fileList.size() + "个文件");
+            getReplyMessage.setFileCount((short) fileList.size());
+            getReplyMessage.setPathCollection(stringBuilder);
+            System.out.println(stringBuilder.toString());
+            System.out.println(stringBuilder.length());
         } catch (Exception e) {
             e.printStackTrace();
         }
         // 3、给用户发送获取应答消息
+        ProFileRequest proFileRequest = new ProFileRequest();
+        // 给其他用户发送文件更新消息。
+        SendAddress sendAddress = GetSendAddress.init("src/main/resources/udpsendconfig.json", "GBDZ");
+        if (sendAddress != null){
+            String ip = sendAddress.getGroupHost();
+            int port = sendAddress.getPort();
+            try {
+                Message.getReplyMessage(emblHeader, getReplyMessage, stringBuilder.length()+9,InetAddress.getByName(ip), port);
+            } catch (UnknownHostException e) {
+                e.printStackTrace();
+            }
+        }else {
+            System.out.println("归档回执发送失败");
+        }
     }
 
     // 00220011/503/514/2020/08/<数据类型>_<业务类型>_<源地址>_<开始时间串>_<结束时间串>.txt
@@ -88,7 +122,6 @@ public class FindFile {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-
         return fileList;
     }
 

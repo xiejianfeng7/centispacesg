@@ -15,7 +15,7 @@ import java.util.Date;
 public class WLTimeConvertTimeTest {
     public static void main(String[] args) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy MM dd HH mm ss");
-        Date date = WLTimeConvert.getBJTime(187, 318318);
+        Date date = WLTimeConvert.getBJTime(190, 387648);
         System.out.println(sdf.format(date));
 
         System.out.println(WLTimeConvert.getWeek());

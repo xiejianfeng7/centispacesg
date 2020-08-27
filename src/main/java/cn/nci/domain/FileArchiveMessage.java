@@ -6,24 +6,12 @@ package cn.nci.domain;
  * @author: xiejianfeng
  * @create: 2020-08-05 15:26
  */
-public class FileHeader {
+public class FileArchiveMessage {
     private Integer dataType;       // 数据类型
     private Integer satID;          // 卫星标识
-    private Byte stationFlag;          // 地面站标识
+    private Byte stationFlag;       // 地面站标识
     private Short fileFlag;         // 归档文件标识
     private String filePath;        // 路径名
-
-    public FileHeader() {
-    }
-
-
-    public FileHeader(Integer dataType, Integer satID, Byte stationFlag, Short fileFlag, String filePath) {
-        this.dataType = dataType;
-        this.satID = satID;
-        this.stationFlag = stationFlag;
-        this.fileFlag = fileFlag;
-        this.filePath = filePath;
-    }
 
     public Integer getDataType() {
         return dataType;
@@ -63,16 +51,5 @@ public class FileHeader {
 
     public void setFilePath(String filePath) {
         this.filePath = filePath;
-    }
-
-    @Override
-    public String toString() {
-        return "FileHeader{" +
-                "dataType=" + dataType +
-                ", satID=" + satID +
-                ", stationFlag=" + stationFlag +
-                ", fileFlag=" + fileFlag +
-                ", filePath='" + filePath + '\'' +
-                '}';
     }
 }

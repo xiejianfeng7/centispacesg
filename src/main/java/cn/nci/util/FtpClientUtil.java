@@ -22,8 +22,8 @@ public class FtpClientUtil {
     private static final Logger logger = LoggerFactory.getLogger(FtpClientUtil.class);
 
     // 初始化参数
-    private static String ftpHost = "";                // FTP服务的IP地址
-    private static String ftpPort = "";                // FTP端口
+    public static String ftpHost = "";                // FTP服务的IP地址
+    public static String ftpPort = "";                // FTP端口
     private static String username = "";               // 用户名
     private static String password = "";               // 密码
     public static String localWorkPath = null;
@@ -110,9 +110,14 @@ public class FtpClientUtil {
      * @Author: john
      * @Date: 2020/8/6 14:09
      */
-    public void close() throws IOException {
+    public void close(){
         if (this.ftpClient.isConnected()) {
-            this.ftpClient.disconnect();
+            try {
+                this.ftpClient.disconnect();
+            } catch (IOException e) {
+                e.printStackTrace();
+                throw new RuntimeException("关闭FTP连接发生异常！", e);
+            }
         }
     }
 
@@ -233,12 +238,12 @@ public class FtpClientUtil {
             throw new RuntimeException("FTP客户端出错！", e);
         } finally {
             IOUtils.closeQuietly(fis);
-            try {
-                ftpClient.disconnect();
-            } catch (IOException e) {
-                e.printStackTrace();
-                throw new RuntimeException("关闭FTP连接发生异常！", e);
-            }
+//            try {
+//                ftpClient.disconnect();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//                throw new RuntimeException("关闭FTP连接发生异常！", e);
+//            }
             logger.info("已上传至FTP服务器路径！");
         }
     }

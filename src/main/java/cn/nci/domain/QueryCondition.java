@@ -11,7 +11,7 @@ import java.util.List;
  * @create: 2020-08-05 12:02
  */
 public class QueryCondition {
-    private Integer message;
+    private Short message;
     private Integer dataType;
     private Integer StationFlag;
     private List<String> param;
@@ -23,28 +23,11 @@ public class QueryCondition {
     private String eventType;
     private String eventNum;
 
-    public QueryCondition() {
-    }
-
-    public QueryCondition(Integer message, Integer dataType, Integer stationFlag, List<String> param, Integer taskID, Integer freq, DateTime start, DateTime end, String source, String eventType, String eventNum) {
-        this.message = message;
-        this.dataType = dataType;
-        StationFlag = stationFlag;
-        this.param = param;
-        this.taskID = taskID;
-        this.freq = freq;
-        this.start = start;
-        this.end = end;
-        this.source = source;
-        this.eventType = eventType;
-        this.eventNum = eventNum;
-    }
-
-    public Integer getMessage() {
+    public Short getMessage() {
         return message;
     }
 
-    public void setMessage(Integer message) {
+    public void setMessage(Short message) {
         this.message = message;
     }
 

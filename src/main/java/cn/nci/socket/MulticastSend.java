@@ -21,6 +21,8 @@ public class MulticastSend {
             multicastSocket.close();
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            System.out.println("success！");
         }
     }
 }

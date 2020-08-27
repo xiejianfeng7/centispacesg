@@ -1,7 +1,5 @@
 package cn.nci.domain;
 
-import java.util.Arrays;
-
 /**
  * @program: centispacesg
  * @description: EMBL包头
@@ -17,9 +15,6 @@ public class EMBLHeader {
     private Integer res1;
     private Integer dataLength;
     private byte[] content;
-
-    public EMBLHeader() {
-    }
 
     public Integer getTaskID() {
         return taskID;
@@ -83,19 +78,5 @@ public class EMBLHeader {
 
     public void setContent(byte[] content) {
         this.content = content;
-    }
-
-    @Override
-    public String toString() {
-        return "EMBLHeader{" +
-                "taskID=" + taskID +
-                ", dataTypeID=" + dataTypeID +
-                ", deviceID=" + deviceID +
-                ", date=" + date +
-                ", time=" + time +
-                ", res1=" + res1 +
-                ", dataLength=" + dataLength +
-                ", content=" + Arrays.toString(content) +
-                '}';
     }
 }

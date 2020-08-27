@@ -1,5 +1,6 @@
 package cn.nci.parse;
 
+import cn.nci.domain.QueryCondition;
 import cn.nci.domain.QueryTelemetryParameters;
 import cn.nci.domain.TelemetryParameters;
 import com.alibaba.fastjson.JSONObject;
@@ -21,5 +22,11 @@ public class GetDataParse {
         parameters.setEngineerValue(jsonObject.getString("engineerValue"));
         parameters.setStateValue(jsonObject.getString("stateValue"));
         return parameters;
+    }
+
+    public static QueryCondition parseFileRequest(JSONObject jsonObject) {
+        QueryCondition queryCondition = new QueryCondition();
+
+        return queryCondition;
     }
 }
