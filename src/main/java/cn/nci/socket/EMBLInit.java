@@ -39,7 +39,7 @@ public class EMBLInit {
                 }
                 map.put(key, arrayList);
             }
-            System.out.println(DateUtil.getCurrentTime() + "EMBL包头信息初始化完成。");
+            System.out.println(DateUtil.getCurrentTime() + " EMBL包头信息初始化完成。");
             return map;
         }
         return null;
