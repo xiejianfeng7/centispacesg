@@ -6,7 +6,7 @@ import cn.nci.service.QueryTelemetryParametersService;
 import cn.nci.service.impl.QueryTelemetryParametersServiceImpl;
 import cn.nci.socket.GetSendAddress;
 import cn.nci.util.ByteStringUtil;
-import cn.nci.util.CsvUtil;
+import cn.nci.util.csv.CsvUtil;
 import cn.nci.util.ExcelUtil;
 import cn.nci.util.FtpClientUtil;
 import com.alibaba.fastjson.JSONObject;

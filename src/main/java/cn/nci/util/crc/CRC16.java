@@ -1,4 +1,4 @@
-package cn.nci.util;
+package cn.nci.util.crc;
 
 /**
  * @program: centispacesg
