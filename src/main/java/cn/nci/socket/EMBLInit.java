@@ -32,7 +32,9 @@ public class EMBLInit {
                 JSONArray array = json.getJSONArray(key);
                 ArrayList list = JSON.parseObject(String.valueOf(array), ArrayList.class);
                 for (int i = 0; i < list.size(); i++) {
-                    arrayList.add(Integer.parseInt((String) list.get(i), 16));
+//                    修复任务标识为8个F的Bug 2020年9月3日14:21:31
+//                    arrayList.add(Integer.parseInt((String) list.get(i), 16));
+                    arrayList.add(Integer.parseUnsignedInt((String) list.get(i), 16));
                 }
                 map.put(key, arrayList);
             }
