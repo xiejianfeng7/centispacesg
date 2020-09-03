@@ -34,6 +34,7 @@ public class EMBLInit {
                 for (int i = 0; i < list.size(); i++) {
 //                    修复任务标识为8个F的Bug 2020年9月3日14:21:31
 //                    arrayList.add(Integer.parseInt((String) list.get(i), 16));
+                    // 正确结果
                     arrayList.add(Integer.parseUnsignedInt((String) list.get(i), 16));
                 }
                 map.put(key, arrayList);
