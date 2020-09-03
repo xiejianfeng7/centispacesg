@@ -10,8 +10,6 @@ import cn.nci.service.impl.EMBLHeaderServiceImpl;
 import cn.nci.service.impl.TelemetryParametersServiceImpl;
 import cn.nci.socket.EMBLInit;
 import cn.nci.util.ByteUtil;
-import cn.nci.util.CRC16Util;
-import cn.nci.util.DateUtil;
 import com.alibaba.fastjson.JSONObject;
 
 import java.util.ArrayList;
@@ -47,9 +45,9 @@ public class DatagramParse {
         System.arraycopy(data, 28, content, 0, emblHeader.getDataLength());
         emblHeader.setContent(content);
 
-        // CRC校验
-        int re = CRC16Util.CRC16_ccitt(content);
-        System.out.println(DateUtil.getCurrentTime() + "CRC 校验结果：" + Integer.toHexString(re).toUpperCase());
+        // CRC校验 2020年9月3日17:14:11
+//        int re = CRC16.crc16(content);
+//        System.out.println(DateUtil.getCurrentTime() + "CRC 校验结果：" + Integer.toHexString(re).toUpperCase());
 
         list.add(emblHeader);
         productService.save(list);
