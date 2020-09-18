@@ -1,18 +1,16 @@
 package cn.nci.parse;
 
 import cn.hutool.core.date.DateTime;
-import cn.nci.domain.*;
-import cn.nci.service.QueryTelemetryParametersService;
-import cn.nci.service.impl.QueryTelemetryParametersServiceImpl;
+import cn.nci.domain.EMBLHeader;
+import cn.nci.domain.GetReplyMessage;
+import cn.nci.domain.QueryCondition;
+import cn.nci.domain.SendAddress;
 import cn.nci.socket.GetSendAddress;
 import cn.nci.util.ByteStringUtil;
-import cn.nci.util.csv.CsvUtil;
-import cn.nci.util.ExcelUtil;
 import cn.nci.util.FtpClientUtil;
 import com.alibaba.fastjson.JSONObject;
 
 import java.io.File;
-import java.io.IOException;
 import java.math.BigDecimal;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -30,8 +28,8 @@ import java.util.List;
  * @create: 2020-08-05 11:53
  */
 public class ProGetRequest {
-    private QueryTelemetryParametersService parametersService = new QueryTelemetryParametersServiceImpl();
-    private String outPutPath = "D://";
+//    private QueryTelemetryParametersService parametersService = new QueryTelemetryParametersServiceImpl();
+//    private String outPutPath = "D://";
 
     /**
      * 功能描述: 处理文件/数据获取请求
@@ -96,41 +94,44 @@ public class ProGetRequest {
         }
     }
 
-    private void getYC(EMBLHeader emblHeader){
-        JSONObject jsonObject = JSONObject.parseObject(new String(emblHeader.getContent()));
-        QueryTelemetryParameters queryTelemetryParameters = GetDataParse.parseName(jsonObject);
-        List<QueryTelemetryParameters> parameters = parametersService.findAll(queryTelemetryParameters);
-
-        // 查询返回结果写入到CSV文件中
-        String[] csvHeaders = {"CodeID", "SignalGndTime", "SignalSatTime", "OriginalValue", "EngineerValue", "StateValue"};
-
-        String fileName = "pack_503_100b_s" + "_";
-        File tempFile = null;
-        try {
-            tempFile = File.createTempFile(fileName, ".csv", new File(outPutPath));
-            if (!tempFile.exists()) {
-                tempFile.mkdirs();
-            }
-            System.out.println(tempFile);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        // 根据用户查询的是哪张表，确定文件名 2020年8月21日15:37:23
-        CsvUtil.writeCSV(parameters, tempFile.toString(), csvHeaders);
-
-        // 将查询结果写入Excel表格
-        try {
-            ExcelUtil.write(parameters, outPutPath + "遥测参数信息.xlsx");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        // 将文件上传到FTP服务器
-
-        // 发送文件更新消息
-    }
+//    private void getYC(EMBLHeader emblHeader){
+//        JSONObject jsonObject = JSONObject.parseObject(new String(emblHeader.getContent()));
+//        QueryTelemetryParameters queryTelemetryParameters = GetDataParse.parseName(jsonObject);
+//        List<QueryTelemetryParameters> parameters = parametersService.findAll(queryTelemetryParameters);
+//
+//        // 查询返回结果写入到CSV文件中
+//        String[] csvHeaders = {"CodeID", "SignalGndTime", "SignalSatTime", "OriginalValue", "EngineerValue", "StateValue"};
+//
+//        String fileName = "pack_503_100b_s" + "_";
+//        File tempFile = null;
+//        try {
+//            tempFile = File.createTempFile(fileName, ".csv", new File(outPutPath));
+//            if (!tempFile.exists()) {
+//                tempFile.mkdirs();
+//            }
+//            System.out.println(tempFile);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        // 根据用户查询的是哪张表，确定文件名 2020年8月21日15:37:23
+//        CsvUtil.writeCSV(parameters, tempFile.toString(), csvHeaders);
+//
+//        // 将查询结果写入Excel表格
+//        try {
+//            ExcelUtil.write(parameters, outPutPath + "遥测参数信息.xlsx");
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        // 将文件上传到FTP服务器
+//
+//        // 发送文件更新消息
+//    }
 
     // 00220011/503/514/2020/08/<数据类型>_<业务类型>_<源地址>_<开始时间串>_<结束时间串>.txt
     public static List<File> findFile(EMBLHeader emblHeader, QueryCondition queryCondition) {
+        if (emblHeader==null || queryCondition == null){
+            return null;
+        }
         List<File> fileList = new ArrayList<>();
         DateTime startTime = queryCondition.getStart();
         DateTime endTime = queryCondition.getEnd();
@@ -140,7 +141,7 @@ public class ProGetRequest {
         // 2、判断开始时间是否小于结束时间
         try {
             // 如果获取文件的开始时间小于结束时间
-            if (startTime.getTime() < endTime.getTime()) {
+            if (startTime.getTime() <= endTime.getTime()) {
                 // 3、考虑跨年和跨月的情况
                 // 根据时间获取要查找那些文件夹
                 List<String> list = getMonthBetween(queryCondition.getStart(), queryCondition.getEnd());

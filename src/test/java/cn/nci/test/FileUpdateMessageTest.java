@@ -24,7 +24,7 @@ public class FileUpdateMessageTest {
             // <数据类型标识>_<卫星标识>_<地面站编号>_ <计划编号>_<开始时间串>_<结束时间串>.xml
             File file = new File("0022FF02_XAJR_202009180002_20200918111643_20200927112542.xml");
             Message.fileUpdateMessage(emblHeader, fileArchiveMessage, file.getName(), InetAddress.getByName("232.100.1.3"), 9008);
-            Thread.sleep(200000);
+            Thread.sleep(5000);
         }
     }
 }

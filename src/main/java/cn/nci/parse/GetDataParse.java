@@ -27,6 +27,20 @@ public class GetDataParse {
     public static QueryCondition parseFileRequest(JSONObject jsonObject) {
         QueryCondition queryCondition = new QueryCondition();
 
+        // 参见附录5 文件获取数据类型的JSON串最大集合，共12个参数
+        /*
+         以下是5.3.6文件/数据获取申请消息定义的内容
+         {
+            "Message":"值",
+            "Type":"值",
+            "param1":"值",
+            "Sat":"值",
+            "Freq":"",
+            "start":"2020-05-20 09:00:00",
+            "end":"2020-05-25 09:00:00"
+         }
+         */
+
         return queryCondition;
     }
 }

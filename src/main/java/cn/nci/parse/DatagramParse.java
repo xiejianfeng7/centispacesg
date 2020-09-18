@@ -64,12 +64,12 @@ public class DatagramParse {
         }
 
         // 文件获取申请消息
-//        else if (0x00120101 == emblHeader.getDataTypeID()) {
-//            // 用户发送数据获取申请，根据获取请求，解析获取的JSON字符串
-//            ProGetRequest proGetRequest = new ProGetRequest();
-//            proGetRequest.getFile(emblHeader);
-//            // 解析出实际内容，根据解析内容查找
-//        }
+        else if (0x00120101 == emblHeader.getDataTypeID()) {
+            // 用户发送数据获取申请，根据获取请求，解析获取的JSON字符串
+            ProGetRequest proGetRequest = new ProGetRequest();
+            proGetRequest.getFile(emblHeader);
+            // 解析出实际内容，根据解析内容查找
+        }
 
         // 文件归档申请消息
         else if (0x00120102 == emblHeader.getDataTypeID()) {
