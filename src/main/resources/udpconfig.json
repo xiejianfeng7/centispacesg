@@ -22,7 +22,12 @@
   "address5": {
     "groupHost": "232.100.110.1",
     "port": 16721,
-    "isCreate": 0
+    "isCreate": 1
+  },
+  "address6": {
+    "groupHost": "232.100.1.3",
+    "port": 9000,
+    "isCreate": 1
   },
   "SOFTID_TX": {
     "groupHost": "232.4.1.1",
@@ -60,8 +65,8 @@
     "isCreate": 1
   },
   "SOFTID_GXGB": {
-    "groupHost": "232.4.1.8",
-    "port": 8000,
+    "groupHost": "232.100.1.3",
+    "port": 9008,
     "isCreate": 1
   }
 }

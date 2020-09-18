@@ -47,9 +47,12 @@ public class EMBLInit {
 
     public static boolean isEMBLExists(EMBLHeader emblHeader) {
         Map<String, ArrayList> map = Main.map;
-        if (map.get("taskID").contains(emblHeader.getTaskID()) && map.get("dataTypeID").contains(emblHeader.getDataTypeID())) {
+        int taskid = emblHeader.getTaskID().intValue();
+        if (map.get("taskID").contains(taskid) && map.get("dataTypeID").contains(emblHeader.getDataTypeID())) {
             return true;
+        } else {
+            System.out.println("不符合接口规范,taskid:" + taskid + ",dataTypeID:" + Integer.toHexString(emblHeader.getDataTypeID()));
+            return false;
         }
-        return false;
     }
 }

@@ -1,5 +1,7 @@
 package cn.nci.socket;
 
+import cn.nci.util.DateUtil;
+
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
@@ -22,7 +24,7 @@ public class MulticastSend {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            System.out.println("success！");
+            System.out.println(DateUtil.getCurrentTime() + " send success！");
         }
     }
 }

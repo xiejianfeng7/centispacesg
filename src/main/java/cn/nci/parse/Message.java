@@ -71,9 +71,9 @@ public class Message {
         MulticastSend.UDPSend(sendPackage, 4 + 28 + fileName.length(), address, port);
     }
 
-    private static byte[] fillEMBLMessageHeader(int taskID, int dataTypeID, int dateLength) {
+    private static byte[] fillEMBLMessageHeader(long taskID, int dataTypeID, int dateLength) {
         byte[] EMBLMessageHeader = new byte[28];
-        ByteUtil.writeIntL(EMBLMessageHeader, taskID, 0);
+        ByteUtil.writeIntL(EMBLMessageHeader, (int) taskID, 0);
         ByteUtil.writeIntL(EMBLMessageHeader, dataTypeID, 4);
         ByteUtil.writeIntL(EMBLMessageHeader, 0x00000103, 8);
         ByteUtil.writeIntL(EMBLMessageHeader, WLTimeConvert.getWeek(), 12);

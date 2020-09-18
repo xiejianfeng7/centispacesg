@@ -7,7 +7,7 @@ package cn.nci.domain;
  * @create: 2020-07-23 13:37
  */
 public class EMBLHeader {
-    private Integer taskID;
+    private Long taskID;
     private Integer dataTypeID;
     private Integer deviceID;
     private Integer date;
@@ -16,11 +16,11 @@ public class EMBLHeader {
     private Integer dataLength;
     private byte[] content;
 
-    public Integer getTaskID() {
+    public Long getTaskID() {
         return taskID;
     }
 
-    public void setTaskID(Integer taskID) {
+    public void setTaskID(Long taskID) {
         this.taskID = taskID;
     }
 

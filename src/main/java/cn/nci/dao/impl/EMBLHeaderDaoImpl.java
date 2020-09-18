@@ -27,7 +27,7 @@ public class EMBLHeaderDaoImpl implements EMBLHeaderDao {
         if (!AutoCreateTable.isTableExist(tableName)) {
             String createBrandDatabase = "CREATE TABLE `" + tableName + "`  (\n" +
                     "  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '唯一标识',\n" +
-                    "  `task_id` int(10) UNSIGNED NOT NULL COMMENT '卫星节点编号，与卫星相关数据填写，不涉及此项填FFFFFFFF。',\n" +
+                    "  `task_id` bigint(20) UNSIGNED NOT NULL COMMENT '卫星节点编号，与卫星相关数据填写，不涉及此项填FFFFFFFF。',\n" +
                     "  `data_type_id` int(10) UNSIGNED NOT NULL COMMENT '数据类型标识',\n" +
                     "  `device_id` int(10) UNSIGNED NULL DEFAULT NULL COMMENT '源地址标识',\n" +
                     "  `wl_date` int(10) UNSIGNED NULL DEFAULT NULL COMMENT '微厘时周计数（以2017年1月1日0时为起点）',\n" +

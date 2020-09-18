@@ -28,7 +28,7 @@ public class DatagramParse {
         TelemetryParametersService parametersService = new TelemetryParametersServiceImpl();
         List<EMBLHeader> list = new ArrayList<>(100);
 
-        emblHeader.setTaskID(ByteUtil.readIntL(data, 0));
+        emblHeader.setTaskID(ByteUtil.readUnsignedIntL(data, 0));
         emblHeader.setDataTypeID(ByteUtil.readIntL(data, 4));
         emblHeader.setDeviceID(ByteUtil.readIntL(data, 8));
         emblHeader.setDate(ByteUtil.readIntL(data, 12));
@@ -41,6 +41,10 @@ public class DatagramParse {
         if (!EMBLInit.isEMBLExists(emblHeader)) {
             return;
         }
+        // 如果任务标识为8个F的话，入库失败，原因是8个F解析后超出int的表示范围。
+//        if (emblHeader.getTaskID() == -1){
+//            emblHeader.setTaskID(0L);
+//        }
         byte[] content = new byte[emblHeader.getDataLength()];
         System.arraycopy(data, 28, content, 0, emblHeader.getDataLength());
         emblHeader.setContent(content);
@@ -60,12 +64,12 @@ public class DatagramParse {
         }
 
         // 文件获取申请消息
-        else if (0x00120101 == emblHeader.getDataTypeID()) {
-            // 用户发送数据获取申请，根据获取请求，解析获取的JSON字符串
-            ProGetRequest proGetRequest = new ProGetRequest();
-            proGetRequest.getFile(emblHeader);
-            // 解析出实际内容，根据解析内容查找
-        }
+//        else if (0x00120101 == emblHeader.getDataTypeID()) {
+//            // 用户发送数据获取申请，根据获取请求，解析获取的JSON字符串
+//            ProGetRequest proGetRequest = new ProGetRequest();
+//            proGetRequest.getFile(emblHeader);
+//            // 解析出实际内容，根据解析内容查找
+//        }
 
         // 文件归档申请消息
         else if (0x00120102 == emblHeader.getDataTypeID()) {

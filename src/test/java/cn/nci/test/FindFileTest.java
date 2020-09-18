@@ -28,13 +28,13 @@ import java.util.List;
 public class FindFileTest {
     public static void main(String[] args) throws ParseException {
         EMBLHeader emblHeader = new EMBLHeader();
-        emblHeader.setTaskID(503);
+        emblHeader.setTaskID(503L);
         QueryCondition queryCondition = new QueryCondition();
         queryCondition.setMessage((short) 1000);
-        queryCondition.setDataType(0x004F0104);
+        queryCondition.setDataType(0x00530002);
         queryCondition.setStationFlag(514);
-        queryCondition.setStart(DateUtil.date(Convert.toDate("2018-05-01 10:19:00")));
-        queryCondition.setEnd(DateUtil.date(Convert.toDate("2020-05-01 20:19:00")));
+        queryCondition.setStart(DateUtil.date(Convert.toDate("2020-05-01 10:19:00")));
+        queryCondition.setEnd(DateUtil.date(Convert.toDate("2020-10-01 20:19:00")));
         // 测试
         // 1、根据用户查询时间查找文件
         List<File> fileList = findFile(emblHeader, queryCondition);

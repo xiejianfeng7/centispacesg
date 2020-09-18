@@ -24,7 +24,7 @@ public class MulticastParse implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("消费者线程启动成功！");
+        System.out.println(DateUtil.getCurrentTime() + " 消费者线程启动成功！");
         boolean isRunning = true;
         try {
             while (isRunning) {

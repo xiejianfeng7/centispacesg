@@ -1,5 +1,7 @@
 package cn.nci.socket;
 
+import cn.nci.util.DateUtil;
+
 import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
@@ -29,7 +31,7 @@ public class MulticastReceive implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("生产者线程启动成功！组播地址：" + groupHost + "，端口：" + port);
+        System.out.println(DateUtil.getCurrentTime() + " 生产者线程启动成功！组播地址：" + groupHost + "，端口：" + port);
         try {
             // 创建multicastSocket实例
             MulticastSocket multicastSocket = new MulticastSocket(port);
