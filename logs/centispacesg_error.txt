@@ -1,0 +1,757 @@
+2020-09-28 14:06:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:07:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:07:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:07:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:07:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:07:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:07:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:08:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:08:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:08:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:08:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:08:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:08:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:09:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:09:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:09:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:09:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:09:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:10:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:10:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:10:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:10:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:10:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:10:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:11:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:11:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:11:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:11:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:11:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:11:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:12:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:12:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:12:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:12:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:12:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:12:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:13:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:18:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:19:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:19:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:19:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:19:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:20:18 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:20:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:20:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:20:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:20:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:21:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:21:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:21:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:21:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:21:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:21:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:22:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:22:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:22:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:22:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:22:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:22:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:23:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:23:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:23:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:23:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:23:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:23:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:24:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:24:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:24:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:24:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:24:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:24:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:25:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:25:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:25:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:25:38 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:25:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:25:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:26:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:26:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:26:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:26:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:26:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:26:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:27:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:27:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:27:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:27:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:27:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:27:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:28:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:28:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:28:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:28:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:28:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:28:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:29:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:29:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:29:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:29:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:29:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:29:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:30:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:30:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:30:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:30:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:30:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:30:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:31:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:31:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:31:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:31:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:31:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:31:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:32:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:32:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:32:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:32:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:32:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:32:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:33:07 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:33:17 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:33:27 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:33:37 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:33:47 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:33:57 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:34:18 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:34:28 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:34:38 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:34:48 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:34:58 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:35:18 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:35:28 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:35:38 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:35:48 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:35:58 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:36:08 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:36:18 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:36:28 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:36:38 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:36:48 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:36:58 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:37:08 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:37:18 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:37:28 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:37:38 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:37:48 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:37:58 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:38:08 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:38:18 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:38:28 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:38:38 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:38:48 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:38:58 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:39:08 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:39:18 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:39:28 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:39:38 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:39:48 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:39:58 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:40:08 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:40:18 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:40:28 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:40:38 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:40:48 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:40:58 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:41:08 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:41:18 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:41:28 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:41:38 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:41:48 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:41:58 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:42:08 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:42:18 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:42:28 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:42:38 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:42:48 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:42:58 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:43:08 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:43:18 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:43:28 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 14:43:38 [ERROR] - cn.nci.main.Main -ProGetRequest.java(90) -归档回执发送失败
+2020-09-28 17:38:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:38:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:38:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:38:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:38:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:38:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:38:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:38:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:38:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:38:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:39:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:39:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:39:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:39:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:39:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:39:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:39:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:39:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:39:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:39:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:39:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:39:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:40:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:40:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:40:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:40:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:40:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:40:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:40:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:40:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:40:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:40:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:40:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:40:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:41:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:41:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:41:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:41:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:41:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:41:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:41:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:41:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:41:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:41:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:41:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:41:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:42:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:42:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:42:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:42:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:42:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:42:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:42:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:42:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:42:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:42:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:42:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:42:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:43:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:43:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:43:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:43:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:43:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:43:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:43:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:43:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:43:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:43:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:43:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:43:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:44:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:44:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:44:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:44:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:44:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:44:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:44:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:44:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:44:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:44:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:44:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:44:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:45:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:45:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:45:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:45:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:45:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:45:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:45:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:45:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:45:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:45:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:45:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:45:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:46:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:46:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:46:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:46:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:46:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:46:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:46:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:46:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:46:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:46:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:46:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:46:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:47:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:47:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:47:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:47:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:47:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:47:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:47:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:47:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:47:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:47:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:47:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:47:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:48:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:48:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:48:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:48:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:48:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:48:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:48:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:48:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:48:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:48:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:48:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:48:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:49:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:49:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:49:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:49:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:49:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:49:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:49:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:49:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:49:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:49:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:49:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:49:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:50:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:50:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:50:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:50:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:50:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:50:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:50:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:50:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:50:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:50:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:50:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:50:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:51:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:51:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:51:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:51:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:51:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:51:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:51:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:51:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:51:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:51:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:51:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:51:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:52:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:52:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:52:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:52:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:52:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:52:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:52:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:52:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:52:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:52:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:52:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:52:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:53:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:53:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:53:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:53:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:53:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:53:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:53:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:53:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:53:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:53:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:53:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:53:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:54:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:54:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:54:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:54:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:54:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:54:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:54:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:54:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:54:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:54:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:54:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:54:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:55:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:55:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:55:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:55:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:55:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:55:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:55:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:55:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:55:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:55:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:55:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:55:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:56:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:56:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:56:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:56:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:56:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:56:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:56:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:56:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:56:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:56:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:56:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:56:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:57:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:57:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:57:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:57:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:57:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:57:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:57:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:57:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:57:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:57:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:57:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:57:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:58:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:58:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:58:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:58:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:58:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:58:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:58:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:58:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:58:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:58:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:58:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:58:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:59:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:59:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:59:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:59:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:59:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:59:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:59:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:59:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:59:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:59:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 17:59:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 17:59:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:00:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:00:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:00:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:00:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:00:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:00:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:00:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:00:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:00:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:00:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:00:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:00:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:01:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:01:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:01:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:01:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:01:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:01:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:01:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:01:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:01:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:01:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:01:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:01:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:02:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:02:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:02:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:02:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:02:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:02:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:02:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:02:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:02:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:02:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:02:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:02:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:03:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:03:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:03:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:03:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:03:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:03:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:03:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:03:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:03:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:03:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:03:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:03:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:04:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:04:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:04:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:04:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:04:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:04:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:04:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:04:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:04:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:04:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:04:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:04:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:05:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:05:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:05:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:05:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:05:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:05:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:05:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:05:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:05:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:05:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:05:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:05:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:06:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:06:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:06:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:06:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:06:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:06:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:06:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:06:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:06:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:06:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:06:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:06:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:07:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:07:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:07:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:07:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:07:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:07:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:07:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:07:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:07:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:07:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:07:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:07:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:08:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:08:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:08:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:08:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:08:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:08:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:08:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:08:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:08:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:08:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:08:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:08:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:09:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:09:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:09:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:09:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:09:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:09:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:09:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:09:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:09:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:09:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:09:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:09:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:10:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:10:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:10:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:10:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:10:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:10:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:10:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:10:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:10:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:10:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:10:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:10:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:11:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:11:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:11:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:11:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:11:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:11:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:11:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:11:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:11:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:11:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:11:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:11:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:12:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:12:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:12:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:12:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:12:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:12:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:12:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:12:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:12:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:12:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:12:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:12:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:13:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:13:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:13:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:13:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:13:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:13:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:13:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:13:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:13:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:13:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:13:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:13:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:14:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:14:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:14:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:14:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:14:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:14:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:14:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:14:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:14:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:14:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:14:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:14:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:15:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:15:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:15:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:15:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:15:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:15:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:15:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:15:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:15:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:15:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:15:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:15:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:16:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:16:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:16:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:16:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:16:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:16:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:16:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:16:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:16:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:16:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:16:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:16:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:17:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:17:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:17:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:17:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:17:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:17:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:17:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:17:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:17:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:17:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:17:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:17:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:18:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:18:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:18:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:18:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:18:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:18:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:18:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:18:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:18:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:18:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:18:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:18:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:19:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:19:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:19:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:19:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:19:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:19:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:19:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:19:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:19:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:19:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:19:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:19:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:20:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:20:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:20:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:20:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:20:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:20:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:20:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:20:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:20:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:20:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:20:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:20:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:21:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:21:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:21:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:21:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:21:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:21:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:21:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:21:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:21:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:21:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:21:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:21:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:22:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:22:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:22:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:22:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:22:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:22:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:22:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:22:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:22:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:22:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:22:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:22:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:23:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:23:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:23:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:23:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:23:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:23:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:23:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:23:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:23:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:23:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:23:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:23:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:24:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:24:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:24:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:24:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:24:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:24:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:24:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:24:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:24:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:24:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:24:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:24:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:25:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:25:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:25:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:25:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:25:29 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:25:29 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:25:39 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:25:39 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:25:49 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:25:49 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:25:59 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:25:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:26:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:26:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
