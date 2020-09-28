@@ -5,8 +5,10 @@ import cn.nci.domain.QueryCondition;
 import cn.nci.domain.QueryTelemetryParameters;
 import cn.nci.domain.TelemetryParameters;
 import cn.nci.main.Main;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -47,9 +49,35 @@ public class GetDataParse {
         try {
             Short message = (Short) jsonObject.getShort("Message");
             Integer dataType = jsonObject.getInteger("type");
-            List<Integer> satelliteID = JSONObject.parseArray(jsonObject.getJSONArray("satellite_id").toJSONString(), Integer.class);
+//            List<Integer> satelliteID = JSONObject.parseArray(jsonObject.getJSONArray("satellite_id").toJSONString(), Integer.class);
+            Object object = jsonObject.get("satellite_id");
+            List<Integer> satelliteID = null;
+            if(object instanceof Integer){
+                List<Integer> list = new ArrayList<>();
+                list.add((Integer)object);
+                satelliteID = list;
+            }else if (object instanceof JSONArray) {
+                try {
+                    satelliteID = JSONObject.parseArray(jsonObject.getJSONArray("satelliteID").toJSONString(), Integer.class);
+                } catch (Exception e) {
+                    System.out.println("satellite_ID 参数类别未找到");
+                }
+            }
             List<Integer> freq = JSONObject.parseArray(jsonObject.getJSONArray("freq").toJSONString(), Integer.class);
-            List<Integer> station = JSONObject.parseArray(jsonObject.getJSONArray("station").toJSONString(), Integer.class);
+//            List<Integer> station = JSONObject.parseArray(jsonObject.getJSONArray("station").toJSONString(), Integer.class);
+            object = jsonObject.get("station");
+            List<Integer> station = null;
+            if(object instanceof Integer){
+                List<Integer> list = new ArrayList<>();
+                list.add((Integer)object);
+                satelliteID = list;
+            }else if (object instanceof JSONArray) {
+                try {
+                    satelliteID = JSONObject.parseArray(jsonObject.getJSONArray("station").toJSONString(), Integer.class);
+                } catch (Exception e) {
+                    System.out.println("station 参数类别未找到");
+                }
+            }
             List<Integer> source = JSONObject.parseArray(jsonObject.getJSONArray("source").toJSONString(), Integer.class);
             DateTime start = new DateTime(jsonObject.getTimestamp("start"));
             DateTime end = new DateTime(jsonObject.getTimestamp("end"));

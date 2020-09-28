@@ -16,6 +16,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @program: centispacesg
@@ -66,6 +67,8 @@ public class FindFileNewTest {
 
     // 00220011/503/514/2020/08/<数据类型>_<业务类型>_<源地址>_<开始时间串>_<结束时间串>.txt
     public static List<File> findFile(QueryCondition queryCondition) {
+        Map<String, ArrayList> map = Main.map;
+
         List<File> fileList = new ArrayList<>();
         DateTime startTime = null;
         DateTime endTime = null;
@@ -94,22 +97,47 @@ public class FindFileNewTest {
                 for (String s : list) {
                     // 拼接文件夹
                     String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator;
+
+                    // 1、判断星号是否为空
+                    if (queryCondition.getSatelliteID() == null) {
+                        queryCondition.setSatelliteID(map.get("taskID"));
+                    }
+                    // 2、判断站号是否为空
+                    if (queryCondition.getStation() == null) {
+                        queryCondition.setStation(map.get("station"));
+                    }
+                    System.out.println(queryCondition.getSatelliteID());
+                    System.out.println(queryCondition.getStation());
                     File file = new File(filePath);
                     if (file.exists() && file.isDirectory()) {
-                        File[] files = file.listFiles();
-                        for (File file1 : files) {
-                            if (file1.exists() && file.isDirectory()) {
-                                File[] files1 = file1.listFiles();
-                                for (File file2 : files1) {
-                                    String newFilePath = file2.toString() + File.separator + s + File.separator;
-                                    File file3 = new File(newFilePath);
-                                    if (file3.exists() && file3.isDirectory()) {
-                                        System.out.println(file3);
-                                        fileList.addAll(folderMethod(file3, startTime, endTime));
-                                    }
+                        List<Integer> satelliteID = queryCondition.getSatelliteID();
+                        List<Integer> station = queryCondition.getStation();
+                        for (int satelliteIDNum = 0; satelliteIDNum < satelliteID.size(); satelliteIDNum++) {
+                            for (int stationNum = 0; stationNum < station.size(); stationNum++) {
+                                String newFilePath = file.toString() + File.separator + satelliteID.get(satelliteIDNum) + File.separator + station.get(stationNum) + File.separator + s + File.separator;
+                                System.out.println(newFilePath);
+                                File newFile = new File(newFilePath);
+                                if (newFile.exists() && newFile.isDirectory()) {
+                                    System.out.println(newFile);
+                                    fileList.addAll(folderMethod(newFile, startTime, endTime));
                                 }
                             }
                         }
+
+//                        File[] files = file.listFiles();
+//                        for (File file1 : files) {
+//                            if (file1.exists() && file.isDirectory()) {
+//                                File[] files1 = file1.listFiles();
+//                                for (File file2 : files1) {
+//                                    String newFilePath = file2.toString() + File.separator + s + File.separator;
+//                                    File file3 = new File(newFilePath);
+//                                    if (file3.exists() && file3.isDirectory()) {
+//                                        System.out.println(file3);
+//                                        fileList.addAll(folderMethod(file3, startTime, endTime));
+//                                    }
+//                                }
+//                            }
+//                        }
                     }
                 }
 

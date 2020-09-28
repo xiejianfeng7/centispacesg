@@ -1,7 +1,7 @@
 package cn.nci.test;
 
 import cn.nci.domain.EMBLHeader;
-import cn.nci.domain.QueryCondition;
+import cn.nci.domain.QueryCondition2;
 import cn.nci.wltime.WLTimeConvert;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -26,26 +26,24 @@ public class QueryConditionTest {
         emblHeader.setRes1(0);
 
 
-        QueryCondition queryCondition = new QueryCondition();
-        Short message = 90;
-        queryCondition.setMessage(message);
-        queryCondition.setDataType(5439490);
-        List<Integer> satelliteID = new ArrayList<>();
-        satelliteID.add(503);
-        satelliteID.add(504);
-        satelliteID.add(505);
-        queryCondition.setSatelliteID(satelliteID);
-//        QueryCondition2 queryCondition = new QueryCondition2();
-//        queryCondition.setSatelliteID(511);
+//        QueryCondition queryCondition = new QueryCondition();
+//        Short message = 90;
+//        queryCondition.setMessage(message);
+//        queryCondition.setDataType(5439490);
+//        List<Integer> satelliteID = new ArrayList<>();
+//        satelliteID.add(503);
+//        satelliteID.add(504);
+//        satelliteID.add(505);
+//        queryCondition.setSatelliteID(satelliteID);
+        QueryCondition2 queryCondition = new QueryCondition2();
+        queryCondition.setSatelliteID(511);
 
-        Object obj = JSONArray.toJSON(queryCondition);
-        String json = obj.toString();
-        System.out.println(json);
-        JSONObject jsonObject = JSONObject.parseObject(json);
+        JSONObject jsonObject = JSONObject.parseObject(JSONArray.toJSON(queryCondition).toString());
 
         Object object = jsonObject.get("satelliteID");
         if(object instanceof Integer){
-            System.out.println((Integer)object);
+            List<Integer> list = new ArrayList<>();
+            list.add((Integer)object);
         }
         else if (object instanceof JSONObject) {
             Integer integer = (Integer) object;
