@@ -146,6 +146,9 @@ public class ProFileRequest {
             case 4:
                 date = Convert.toDate(split[2]);
                 break;
+            case 5:
+                date = Convert.toDate(split[3]);
+                break;
             default:
                 date = Convert.toDate(split[split.length - 1]);
                 break;

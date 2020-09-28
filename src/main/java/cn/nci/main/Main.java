@@ -5,6 +5,7 @@ import cn.nci.socket.EMBLInit;
 import cn.nci.socket.MulticastInit;
 import cn.nci.socket.MulticastParse;
 import cn.nci.socket.MulticastReceive;
+import cn.nci.util.FtpClientUtil;
 import org.apache.log4j.Logger;
 
 import java.net.DatagramPacket;
@@ -28,6 +29,16 @@ public class Main {
 
     // 初始化embl接口文件
     public static Map<String, ArrayList> map = EMBLInit.init("src/main/resources/emblconfig.json");
+
+    // 初始化FTP账号相关信息
+    FtpClientUtil clientUtil = null;
+    {
+        try {
+            clientUtil = FtpClientUtil.getInstance("src/main/resources/ftpconfig.json","localWorkPath");
+        } catch (Exception e) {
+            Main.logger.error("FTP账号配置文件初始化失败。");
+        }
+    }
 
     public static void main(String[] args) {
         ExecutorService service = new ThreadPoolExecutor(0, Integer.MAX_VALUE,

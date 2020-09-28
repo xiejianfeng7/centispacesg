@@ -1,6 +1,9 @@
 package cn.nci.test;
 
-import cn.hutool.core.date.DateUtil;
+import cn.nci.domain.QueryCondition;
+import cn.nci.util.ByteStringUtil;
+
+import java.io.File;
 
 /**
  * @program: centispacesg
@@ -10,9 +13,21 @@ import cn.hutool.core.date.DateUtil;
  */
 public class Demo {
     public static void main(String[] args) {
-
-        long time = DateUtil.parse("2020-01-01 00:00:00").getTime();
-        System.out.println(time);
-        System.out.println(System.currentTimeMillis());
+        QueryCondition queryCondition = new QueryCondition();
+        queryCondition.setDataType(0x00530002);
+        String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator;
+        File file = new File(filePath);
+        if (file.exists() && file.isDirectory()) {
+            File[] files = file.listFiles();
+            for (File file1 : files) {
+                if (file1.exists() && file.isDirectory()){
+                    File[] files1 = file1.listFiles();
+                    for (File file2 : files1) {
+                        System.out.println(file2);
+                    }
+                }
+            }
+            System.out.println();
+        }
     }
 }

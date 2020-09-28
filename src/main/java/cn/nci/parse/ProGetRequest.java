@@ -1,7 +1,12 @@
 package cn.nci.parse;
 
+import cn.hutool.core.convert.Convert;
 import cn.hutool.core.date.DateTime;
-import cn.nci.domain.*;
+import cn.hutool.core.date.DateUtil;
+import cn.nci.domain.EMBLHeader;
+import cn.nci.domain.GetReplyMessage;
+import cn.nci.domain.QueryCondition;
+import cn.nci.domain.SendAddress;
 import cn.nci.main.Main;
 import cn.nci.socket.GetSendAddress;
 import cn.nci.util.ByteStringUtil;
@@ -41,7 +46,7 @@ public class ProGetRequest {
         JSONObject jsonObject = JSONObject.parseObject(new String(emblHeader.getContent()));
         QueryCondition queryCondition = GetDataParse.parseFileRequest(jsonObject);
         // 如果用户给的查询条件解析之后无效，直接返回，不做后续处理。
-        if (queryCondition==null){
+        if (queryCondition == null) {
             Main.logger.error("文件获取请求无效，不符合接口规范。");
             return;
         }
@@ -52,7 +57,7 @@ public class ProGetRequest {
         FtpClientUtil clientUtil = null;
         StringBuilder stringBuilder = new StringBuilder();
         GetReplyMessage getReplyMessage = new GetReplyMessage();
-        if (null== queryCondition || null == queryCondition.getDataType() || null == queryCondition.getMessage()) {
+        if (null == queryCondition || null == queryCondition.getDataType() || null == queryCondition.getMessage()) {
             return;
         } else {
             getReplyMessage.setDataType(queryCondition.getDataType());
@@ -67,15 +72,16 @@ public class ProGetRequest {
 //                System.out.println(file.getName());
 //                System.out.println(file.getAbsolutePath());
                 stringBuilder.append(ftpHost + file.getName() + ";");
-                // 删除最后一个;号
-                if (fileList.size() >= 1) {
-                    stringBuilder.replace(stringBuilder.length() - 1, stringBuilder.length(), "");
-                }
                 clientUtil.uploadFtpFile(file.getParent(), file.getName(), "/");
-                Byte flag = 1;
-                getReplyMessage.setReplyFlag(flag);
             }
             clientUtil.close();
+            // 删除最后一个;号
+            if (fileList.size() >= 1) {
+                stringBuilder.replace(stringBuilder.length() - 1, stringBuilder.length(), "");
+            }
+            Byte flag = 1;
+            getReplyMessage.setReplyFlag(flag);
+
             getReplyMessage.setFileCount((short) fileList.size());
             getReplyMessage.setPathCollection(stringBuilder);
             Main.logger.info("获取文件列表名：" + stringBuilder.toString());
@@ -135,39 +141,89 @@ public class ProGetRequest {
 
     // 00220011/503/514/2020/08/<数据类型>_<业务类型>_<源地址>_<开始时间串>_<结束时间串>.txt
     public static List<File> findFile(EMBLHeader emblHeader, QueryCondition queryCondition) {
-        if (emblHeader == null || queryCondition == null) {
+        List<File> fileList = new ArrayList<>();
+        DateTime startTime = null;
+        DateTime endTime = null;
+
+        if (queryCondition == null) {
             return null;
         }
-        List<File> fileList = new ArrayList<>();
-        DateTime startTime = queryCondition.getStart();
-        DateTime endTime = queryCondition.getEnd();
-
+        if (queryCondition.getStart() == null) {
+            queryCondition.setStart(DateUtil.date(Convert.toDate("2010-01-01 00:00:00")));
+            startTime = queryCondition.getStart();
+        }
+        if (queryCondition.getEnd() == null) {
+            queryCondition.setEnd(DateUtil.date(System.currentTimeMillis()));
+            endTime = queryCondition.getEnd();
+        }
         // 1、判断要获取的数据是符合接口规范的
-
-        // ？？新需求，如果只告诉我数据类型，我要返回所有的文件。2020年9月28日18:02:24
 
         // 2、判断开始时间是否小于结束时间
         try {
             // 如果获取文件的开始时间小于结束时间
-            if (startTime != null && endTime != null && startTime.getTime() <= endTime.getTime()) {
+            if (startTime.getTime() < endTime.getTime()) {
                 // 3、考虑跨年和跨月的情况
                 // 根据时间获取要查找那些文件夹
                 List<String> list = getMonthBetween(queryCondition.getStart(), queryCondition.getEnd());
 
                 for (String s : list) {
                     // 拼接文件夹
-                    String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator + emblHeader.getTaskID() + File.separator + queryCondition.getStation() + File.separator + s + File.separator;
-                    
-                    Main.logger.info("查找文件的路径为：" + filePath);
+                    String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator;
                     File file = new File(filePath);
                     if (file.exists() && file.isDirectory()) {
-                        fileList.addAll(folderMethod(file, startTime, endTime));
+                        File[] files = file.listFiles();
+                        for (File file1 : files) {
+                            if (file1.exists() && file.isDirectory()) {
+                                File[] files1 = file1.listFiles();
+                                for (File file2 : files1) {
+                                    String newFilePath = file2.toString() + File.separator + s + File.separator;
+                                    File file3 = new File(newFilePath);
+                                    if (file3.exists() && file3.isDirectory()) {
+                                        System.out.println(file3);
+                                        fileList.addAll(folderMethod(file3, startTime, endTime));
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             } else {
                 // 非法获取情形
                 Main.logger.warn("时间非法，请检查!");
             }
+//        if (emblHeader == null || queryCondition == null) {
+//            return null;
+//        }
+//        List<File> fileList = new ArrayList<>();
+//        DateTime startTime = queryCondition.getStart();
+//        DateTime endTime = queryCondition.getEnd();
+//
+//        // 1、判断要获取的数据是符合接口规范的
+//
+//        // ？？新需求，如果只告诉我数据类型，我要返回所有的文件。2020年9月28日18:02:24
+//
+//        // 2、判断开始时间是否小于结束时间
+//        try {
+//            // 如果获取文件的开始时间小于结束时间
+//            if (startTime != null && endTime != null && startTime.getTime() <= endTime.getTime()) {
+//                // 3、考虑跨年和跨月的情况
+//                // 根据时间获取要查找那些文件夹
+//                List<String> list = getMonthBetween(queryCondition.getStart(), queryCondition.getEnd());
+//
+//                for (String s : list) {
+//                    // 拼接文件夹
+//                    String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator + emblHeader.getTaskID() + File.separator + queryCondition.getStation() + File.separator + s + File.separator;
+//
+//                    Main.logger.info("查找文件的路径为：" + filePath);
+//                    File file = new File(filePath);
+//                    if (file.exists() && file.isDirectory()) {
+//                        fileList.addAll(folderMethod(file, startTime, endTime));
+//                    }
+//                }
+//            } else {
+//                // 非法获取情形
+//                Main.logger.warn("时间非法，请检查!");
+//            }
         } catch (ParseException e) {
             e.printStackTrace();
         }

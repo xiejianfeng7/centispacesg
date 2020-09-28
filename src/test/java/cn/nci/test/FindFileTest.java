@@ -108,6 +108,7 @@ public class FindFileTest {
                 for (String s : list) {
                     // 拼接文件夹
                     String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator + emblHeader.getTaskID() + File.separator + queryCondition.getStation() + File.separator + s + File.separator;
+                    System.out.println(filePath);
                     File file = new File(filePath);
                     if (file.exists() && file.isDirectory()) {
                         fileList.addAll(folderMethod(file, startTime, endTime));
