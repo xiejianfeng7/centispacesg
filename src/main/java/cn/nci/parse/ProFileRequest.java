@@ -6,6 +6,7 @@ import cn.hutool.core.date.DateUtil;
 import cn.nci.domain.EMBLHeader;
 import cn.nci.domain.FileArchiveMessage;
 import cn.nci.domain.SendAddress;
+import cn.nci.main.Main;
 import cn.nci.socket.GetSendAddress;
 import cn.nci.util.ByteStringUtil;
 import cn.nci.util.ByteUtil;
@@ -112,7 +113,7 @@ public class ProFileRequest {
                 e.printStackTrace();
             }
         } else {
-            System.out.println("归档回执发送失败");
+            Main.logger.error("归档回执发送失败");
         }
 
         // 给其他用户发送文件更新消息。
@@ -126,7 +127,7 @@ public class ProFileRequest {
                 e.printStackTrace();
             }
         } else {
-            System.out.println("归档回执发送失败");
+            Main.logger.error("归档回执发送失败");
         }
     }
 

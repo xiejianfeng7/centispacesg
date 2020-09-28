@@ -1,10 +1,8 @@
 package cn.nci.parse;
 
 import cn.hutool.core.date.DateTime;
-import cn.nci.domain.EMBLHeader;
-import cn.nci.domain.GetReplyMessage;
-import cn.nci.domain.QueryCondition;
-import cn.nci.domain.SendAddress;
+import cn.nci.domain.*;
+import cn.nci.main.Main;
 import cn.nci.socket.GetSendAddress;
 import cn.nci.util.ByteStringUtil;
 import cn.nci.util.FtpClientUtil;
@@ -42,6 +40,11 @@ public class ProGetRequest {
     public void getFile(EMBLHeader emblHeader) {
         JSONObject jsonObject = JSONObject.parseObject(new String(emblHeader.getContent()));
         QueryCondition queryCondition = GetDataParse.parseFileRequest(jsonObject);
+        // 如果用户给的查询条件解析之后无效，直接返回，不做后续处理。
+        if (queryCondition==null){
+            Main.logger.error("文件获取请求无效，不符合接口规范。");
+            return;
+        }
         // 1、根据用户查询时间查找文件
         List<File> fileList = findFile(emblHeader, queryCondition);
 
@@ -49,8 +52,12 @@ public class ProGetRequest {
         FtpClientUtil clientUtil = null;
         StringBuilder stringBuilder = new StringBuilder();
         GetReplyMessage getReplyMessage = new GetReplyMessage();
-        getReplyMessage.setDataType(queryCondition.getDataType());
-        getReplyMessage.setMessage(queryCondition.getMessage());
+        if (null== queryCondition || null == queryCondition.getDataType() || null == queryCondition.getMessage()) {
+            return;
+        } else {
+            getReplyMessage.setDataType(queryCondition.getDataType());
+            getReplyMessage.setMessage(queryCondition.getMessage());
+        }
         try {
             clientUtil = FtpClientUtil.getInstance("src/main/resources/ftpconfig.json", "sjgl");
             String ftpHost = "ftp://" + clientUtil.ftpHost + "/";
@@ -61,7 +68,7 @@ public class ProGetRequest {
 //                System.out.println(file.getAbsolutePath());
                 stringBuilder.append(ftpHost + file.getName() + ";");
                 // 删除最后一个;号
-                if (fileList.size()>=1){
+                if (fileList.size() >= 1) {
                     stringBuilder.replace(stringBuilder.length() - 1, stringBuilder.length(), "");
                 }
                 clientUtil.uploadFtpFile(file.getParent(), file.getName(), "/");
@@ -69,28 +76,27 @@ public class ProGetRequest {
                 getReplyMessage.setReplyFlag(flag);
             }
             clientUtil.close();
-            System.out.println("共查到：" + fileList.size() + "个文件");
             getReplyMessage.setFileCount((short) fileList.size());
             getReplyMessage.setPathCollection(stringBuilder);
-            System.out.println(stringBuilder.toString());
-            System.out.println(stringBuilder.length());
+            Main.logger.info("获取文件列表名：" + stringBuilder.toString());
+            Main.logger.info("获取文件列表长度：" + stringBuilder.length());
         } catch (Exception e) {
             e.printStackTrace();
         }
         // 3、给用户发送获取应答消息
         ProFileRequest proFileRequest = new ProFileRequest();
         // 给其他用户发送文件更新消息。
-        SendAddress sendAddress = GetSendAddress.init("src/main/resources/udpsendconfig.json", "GBDZ");
-        if (sendAddress != null){
+        SendAddress sendAddress = GetSendAddress.init("src/main/resources/udpsendconfig.json", "GXYD");
+        if (sendAddress != null) {
             String ip = sendAddress.getGroupHost();
             int port = sendAddress.getPort();
             try {
-                Message.getReplyMessage(emblHeader, getReplyMessage, stringBuilder.length()+9, InetAddress.getByName(ip), port);
+                Message.getReplyMessage(emblHeader, getReplyMessage, stringBuilder.length() + 9, InetAddress.getByName(ip), port);
             } catch (UnknownHostException e) {
-                e.printStackTrace();
+                Main.logger.error("归档回执发送失败");
             }
-        }else {
-            System.out.println("归档回执发送失败");
+        } else {
+            Main.logger.error("归档回执发送失败");
         }
     }
 
@@ -129,7 +135,7 @@ public class ProGetRequest {
 
     // 00220011/503/514/2020/08/<数据类型>_<业务类型>_<源地址>_<开始时间串>_<结束时间串>.txt
     public static List<File> findFile(EMBLHeader emblHeader, QueryCondition queryCondition) {
-        if (emblHeader==null || queryCondition == null){
+        if (emblHeader == null || queryCondition == null) {
             return null;
         }
         List<File> fileList = new ArrayList<>();
@@ -138,26 +144,29 @@ public class ProGetRequest {
 
         // 1、判断要获取的数据是符合接口规范的
 
+        // ？？新需求，如果只告诉我数据类型，我要返回所有的文件。2020年9月28日18:02:24
+
         // 2、判断开始时间是否小于结束时间
         try {
             // 如果获取文件的开始时间小于结束时间
-            if (startTime.getTime() <= endTime.getTime()) {
+            if (startTime != null && endTime != null && startTime.getTime() <= endTime.getTime()) {
                 // 3、考虑跨年和跨月的情况
                 // 根据时间获取要查找那些文件夹
                 List<String> list = getMonthBetween(queryCondition.getStart(), queryCondition.getEnd());
 
                 for (String s : list) {
                     // 拼接文件夹
-                    String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator + emblHeader.getTaskID() + File.separator + queryCondition.getStationFlag() + File.separator + s + File.separator;
+                    String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator + emblHeader.getTaskID() + File.separator + queryCondition.getStation() + File.separator + s + File.separator;
+                    
+                    Main.logger.info("查找文件的路径为：" + filePath);
                     File file = new File(filePath);
                     if (file.exists() && file.isDirectory()) {
                         fileList.addAll(folderMethod(file, startTime, endTime));
                     }
                 }
-
             } else {
                 // 非法获取情形
-                System.out.println("时间非法，请检查!");
+                Main.logger.warn("时间非法，请检查!");
             }
         } catch (ParseException e) {
             e.printStackTrace();
@@ -174,7 +183,8 @@ public class ProGetRequest {
             // 获取文件基准时间
             DateTime dateTime = proFileRequest.getFileBaseTime(fileName.getName());
             if (dateTime.getTime() >= startTime.getTime() && dateTime.getTime() <= endTime.getTime()) {
-                list.add(fileName);
+                boolean flag = list.add(fileName);
+                Main.logger.info("文件添加：" + flag);
             }
         }
         return list;

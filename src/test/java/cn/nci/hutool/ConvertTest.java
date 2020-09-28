@@ -3,6 +3,7 @@ package cn.nci.hutool;
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
+import cn.nci.main.Main;
 
 import java.util.Date;
 
@@ -19,6 +20,6 @@ public class ConvertTest {
         long between = DateUtil.between(date1, date, DateUnit.DAY);
 
         String s = Convert.numberToChinese(1122554, true);
-        System.out.println(s);
+        Main.logger.info(s);
     }
 }

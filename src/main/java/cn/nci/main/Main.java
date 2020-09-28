@@ -5,6 +5,7 @@ import cn.nci.socket.EMBLInit;
 import cn.nci.socket.MulticastInit;
 import cn.nci.socket.MulticastParse;
 import cn.nci.socket.MulticastReceive;
+import org.apache.log4j.Logger;
 
 import java.net.DatagramPacket;
 import java.util.ArrayList;
@@ -22,6 +23,10 @@ import java.util.concurrent.*;
  * @Modified By:
  */
 public class Main {
+    // 初始化日志记录
+    public static Logger logger = Logger.getLogger(Main.class);
+
+    // 初始化embl接口文件
     public static Map<String, ArrayList> map = EMBLInit.init("src/main/resources/emblconfig.json");
 
     public static void main(String[] args) {

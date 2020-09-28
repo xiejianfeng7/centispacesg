@@ -1,6 +1,6 @@
 package cn.nci.socket;
 
-import cn.nci.util.DateUtil;
+import cn.nci.main.Main;
 
 import java.net.DatagramPacket;
 import java.net.InetAddress;
@@ -31,7 +31,7 @@ public class MulticastReceive implements Runnable {
 
     @Override
     public void run() {
-        System.out.println(DateUtil.getCurrentTime() + " 生产者线程启动成功！组播地址：" + groupHost + "，端口：" + port);
+        Main.logger.info("生产者线程启动成功！组播地址：" + groupHost + "，端口：" + port);
         try {
             // 创建multicastSocket实例
             MulticastSocket multicastSocket = new MulticastSocket(port);
@@ -45,11 +45,11 @@ public class MulticastReceive implements Runnable {
                 DatagramPacket datagramPacket = new DatagramPacket(bytes, bytes.length);
                 multicastSocket.receive(datagramPacket);
                 if (!queue.offer(datagramPacket, 60, TimeUnit.SECONDS)) {
-                    System.out.println("放入数据失败：" + datagramPacket);
+                    Main.logger.error("放入数据失败：" + datagramPacket);
                 }
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            Main.logger.info("生产者线程出现【异常】，组播地址：" + groupHost + "，端口：" + port);
         }
     }
 

@@ -2,7 +2,6 @@ package cn.nci.socket;
 
 import cn.nci.domain.EMBLHeader;
 import cn.nci.main.Main;
-import cn.nci.util.DateUtil;
 import cn.nci.util.ReadJson;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
@@ -39,7 +38,7 @@ public class EMBLInit {
                 }
                 map.put(key, arrayList);
             }
-            System.out.println(DateUtil.getCurrentTime() + " EMBL包头信息初始化完成。");
+            Main.logger.info("EMBL包头信息初始化完成。");
             return map;
         }
         return null;

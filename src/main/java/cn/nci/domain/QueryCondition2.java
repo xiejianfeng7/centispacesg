@@ -10,11 +10,11 @@ import java.util.List;
  * @author: xiejianfeng
  * @create: 2020-08-05 12:02
  */
-public class QueryCondition {
+public class QueryCondition2 {
     private Short message;              // 自定义4位数字，消息编号，与获取应答消息中的消息编号对应，只填1个
     private Integer dataType;           // 必填，只填1个
 
-    private List<Integer> satelliteID;  // 卫星标识
+    private Integer satelliteID;  // 卫星标识
     private List<Integer> freq;         // 填“S”或者“X”
     private List<Integer> station;
     private List<Integer> source;       // 源地址
@@ -22,22 +22,6 @@ public class QueryCondition {
     private DateTime end;               // 结束时间
     private Integer newFile;            // 最新文件/数据
     private List<String> param;         // 只有获取或写入数据库数据时填写
-
-    public QueryCondition() {
-    }
-
-    public QueryCondition(Short message, Integer dataType, List<Integer> satelliteID, List<Integer> freq, List<Integer> station, List<Integer> source, DateTime start, DateTime end, Integer newFile, List<String> param) {
-        this.message = message;
-        this.dataType = dataType;
-        this.satelliteID = satelliteID;
-        this.freq = freq;
-        this.station = station;
-        this.source = source;
-        this.start = start;
-        this.end = end;
-        this.newFile = newFile;
-        this.param = param;
-    }
 
     public Short getMessage() {
         return message;
@@ -55,11 +39,11 @@ public class QueryCondition {
         this.dataType = dataType;
     }
 
-    public List<Integer> getSatelliteID() {
+    public Integer getSatelliteID() {
         return satelliteID;
     }
 
-    public void setSatelliteID(List<Integer> satelliteID) {
+    public void setSatelliteID(Integer satelliteID) {
         this.satelliteID = satelliteID;
     }
 

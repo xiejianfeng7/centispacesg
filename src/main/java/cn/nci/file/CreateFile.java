@@ -54,7 +54,6 @@ public class CreateFile {
                 e.printStackTrace();
             }
         }
-
         return file.getParentFile() + "/" + file.getName();
     }
 }

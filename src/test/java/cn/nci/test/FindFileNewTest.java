@@ -1,9 +1,7 @@
 package cn.nci.test;
 
-import cn.hutool.core.convert.Convert;
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
-import cn.nci.domain.EMBLHeader;
 import cn.nci.domain.GetReplyMessage;
 import cn.nci.domain.QueryCondition;
 import cn.nci.main.Main;
@@ -26,20 +24,15 @@ import java.util.List;
  * @author: xiejianfeng
  * @create: 2020-08-25 15:03
  */
-public class FindFileTest {
+public class FindFileNewTest {
     public static void main(String[] args) throws ParseException {
-        EMBLHeader emblHeader = new EMBLHeader();
-        emblHeader.setTaskID(503L);
         QueryCondition queryCondition = new QueryCondition();
-        queryCondition.setMessage((short) 1000);
         queryCondition.setDataType(0x00530002);
-//        queryCondition.setStation(514);
-        queryCondition.setStart(DateUtil.date(Convert.toDate("2020-05-01 10:19:00")));
-        queryCondition.setEnd(DateUtil.date(Convert.toDate("2020-10-01 20:19:00")));
+//        queryCondition.setStart(DateUtil.date(Convert.toDate("2010-05-01 10:19:00")));
+//        queryCondition.setEnd(DateUtil.date(Convert.toDate("2020-10-01 20:19:00")));
         // 测试
         // 1、根据用户查询时间查找文件
-        List<File> fileList = findFile(emblHeader, queryCondition);
-
+        List<File> fileList = findFile(queryCondition);
 
         // 2、将查找的文件上传到指定的FTP地址
         FtpClientUtil clientUtil = null;
@@ -90,10 +83,20 @@ public class FindFileTest {
     }
 
     // 00220011/503/514/2020/08/<数据类型>_<业务类型>_<源地址>_<开始时间串>_<结束时间串>.txt
-    public static List<File> findFile(EMBLHeader emblHeader, QueryCondition queryCondition) {
+    public static List<File> findFile(QueryCondition queryCondition) {
         List<File> fileList = new ArrayList<>();
-        DateTime startTime = queryCondition.getStart();
-        DateTime endTime = queryCondition.getEnd();
+        DateTime startTime = null;
+        DateTime endTime = null;
+
+        if (queryCondition == null) {
+            return null;
+        }
+        if (queryCondition.getStart() ==null){
+            startTime = DateUtil.parse("2010-01-01 00:00:00");
+        }
+        if (queryCondition.getEnd() == null){
+            endTime =DateUtil.date();
+        }
 
         // 1、判断要获取的数据是符合接口规范的
 
@@ -107,7 +110,7 @@ public class FindFileTest {
 
                 for (String s : list) {
                     // 拼接文件夹
-                    String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator + emblHeader.getTaskID() + File.separator + queryCondition.getStation() + File.separator + s + File.separator;
+                    String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator + 503 + File.separator + 514 + File.separator + s + File.separator;
                     File file = new File(filePath);
                     if (file.exists() && file.isDirectory()) {
                         fileList.addAll(folderMethod(file, startTime, endTime));
