@@ -755,3 +755,5 @@
 2020-09-28 18:25:59 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
 2020-09-28 18:26:09 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
 2020-09-28 18:26:09 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
+2020-09-28 18:26:19 [ERROR] - cn.nci.main.Main -GetDataParse.java(62) -JSON 串参数不符合接口要求。{"Type":"ffffffff","Message":"22ff02","Sat":"","start":"2020-09-27 11:25:42","Freq":"","end":"2020-09-27 11:25:42","param1":"202"}
+2020-09-28 18:26:19 [ERROR] - cn.nci.main.Main -ProGetRequest.java(45) -文件获取请求无效，不符合接口规范。
