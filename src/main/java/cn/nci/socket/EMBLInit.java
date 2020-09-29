@@ -25,8 +25,8 @@ public class EMBLInit {
             json = JSONObject.parseObject(content);
             Set<String> set = json.keySet();
             Iterator<String> it = set.iterator();
-            ArrayList<Integer> arrayList = new ArrayList<>();
             while (it.hasNext()) {
+                ArrayList<Integer> arrayList = new ArrayList<>();
                 String key = it.next();
                 JSONArray array = json.getJSONArray(key);
                 ArrayList list = JSON.parseObject(String.valueOf(array), ArrayList.class);

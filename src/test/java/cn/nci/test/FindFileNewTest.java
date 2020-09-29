@@ -73,11 +73,13 @@ public class FindFileNewTest {
         DateTime startTime = null;
         DateTime endTime = null;
 
+        String newFilePath = null;
+
         if (queryCondition == null) {
             return null;
         }
         if (queryCondition.getStart() == null) {
-            queryCondition.setStart(DateUtil.date(Convert.toDate("2020-09-01 00:00:00")));
+            queryCondition.setStart(DateUtil.date(Convert.toDate("2017-01-01 00:00:00")));
             startTime = queryCondition.getStart();
         }
         if (queryCondition.getEnd() == null) {
@@ -106,19 +108,23 @@ public class FindFileNewTest {
                     if (queryCondition.getStation() == null) {
                         queryCondition.setStation(map.get("station"));
                     }
-                    System.out.println(queryCondition.getSatelliteID());
-                    System.out.println(queryCondition.getStation());
+//                    System.out.println(queryCondition.getSatelliteID());
+//                    System.out.println(queryCondition.getStation());
                     File file = new File(filePath);
                     if (file.exists() && file.isDirectory()) {
                         List<Integer> satelliteID = queryCondition.getSatelliteID();
                         List<Integer> station = queryCondition.getStation();
                         for (int satelliteIDNum = 0; satelliteIDNum < satelliteID.size(); satelliteIDNum++) {
                             for (int stationNum = 0; stationNum < station.size(); stationNum++) {
-                                String newFilePath = file.toString() + File.separator + satelliteID.get(satelliteIDNum) + File.separator + station.get(stationNum) + File.separator + s + File.separator;
-                                System.out.println(newFilePath);
+                                if ((Integer) satelliteID.get(satelliteIDNum) != -1) {
+                                    newFilePath = file.toString() + File.separator + satelliteID.get(satelliteIDNum) + File.separator + station.get(stationNum) + File.separator + s + File.separator;
+                                } else {
+                                    newFilePath = file.toString() + File.separator + "4294967295" + File.separator + station.get(stationNum) + File.separator + s + File.separator;
+                                }
+//                                System.out.println(newFilePath);
                                 File newFile = new File(newFilePath);
                                 if (newFile.exists() && newFile.isDirectory()) {
-                                    System.out.println(newFile);
+//                                    System.out.println(newFile);
                                     fileList.addAll(folderMethod(newFile, startTime, endTime));
                                 }
                             }

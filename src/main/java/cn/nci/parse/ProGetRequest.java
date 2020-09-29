@@ -19,10 +19,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 /**
  * @program: centispacesg
@@ -79,7 +76,7 @@ public class ProGetRequest {
             if (fileList.size() >= 1) {
                 stringBuilder.replace(stringBuilder.length() - 1, stringBuilder.length(), "");
             }
-            Byte flag = 1;
+            Byte flag = 0;
             getReplyMessage.setReplyFlag(flag);
 
             getReplyMessage.setFileCount((short) fileList.size());
@@ -140,28 +137,122 @@ public class ProGetRequest {
 //    }
 
     // 00220011/503/514/2020/08/<数据类型>_<业务类型>_<源地址>_<开始时间串>_<结束时间串>.txt
+//    public static List<File> findFile(EMBLHeader emblHeader, QueryCondition queryCondition) {
+//        List<File> fileList = new ArrayList<>();
+//        DateTime startTime = null;
+//        DateTime endTime = null;
+//
+//        if (queryCondition == null) {
+//            return null;
+//        }
+//        if (queryCondition.getStart() == null) {
+//            queryCondition.setStart(DateUtil.date(Convert.toDate("2010-01-01 00:00:00")));
+//            startTime = queryCondition.getStart();
+//        }
+//        if (queryCondition.getEnd() == null) {
+//            queryCondition.setEnd(DateUtil.date(System.currentTimeMillis()));
+//            endTime = queryCondition.getEnd();
+//        }
+//        // 1、判断要获取的数据是符合接口规范的
+//
+//        // 2、判断开始时间是否小于结束时间
+//        try {
+//            // 如果获取文件的开始时间小于结束时间
+//            if (startTime.getTime() < endTime.getTime()) {
+//                // 3、考虑跨年和跨月的情况
+//                // 根据时间获取要查找那些文件夹
+//                List<String> list = getMonthBetween(queryCondition.getStart(), queryCondition.getEnd());
+//
+//                for (String s : list) {
+//                    // 拼接文件夹
+//                    String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator;
+//                    File file = new File(filePath);
+//                    if (file.exists() && file.isDirectory()) {
+//                        File[] files = file.listFiles();
+//                        for (File file1 : files) {
+//                            if (file1.exists() && file.isDirectory()) {
+//                                File[] files1 = file1.listFiles();
+//                                for (File file2 : files1) {
+//                                    String newFilePath = file2.toString() + File.separator + s + File.separator;
+//                                    File file3 = new File(newFilePath);
+//                                    if (file3.exists() && file3.isDirectory()) {
+//                                        System.out.println(file3);
+//                                        fileList.addAll(folderMethod(file3, startTime, endTime));
+//                                    }
+//                                }
+//                            }
+//                        }
+//                    }
+//                }
+//            } else {
+//                // 非法获取情形
+//                Main.logger.warn("时间非法，请检查!");
+//            }
+////        if (emblHeader == null || queryCondition == null) {
+////            return null;
+////        }
+////        List<File> fileList = new ArrayList<>();
+////        DateTime startTime = queryCondition.getStart();
+////        DateTime endTime = queryCondition.getEnd();
+////
+////        // 1、判断要获取的数据是符合接口规范的
+////
+////        // ？？新需求，如果只告诉我数据类型，我要返回所有的文件。2020年9月28日18:02:24
+////
+////        // 2、判断开始时间是否小于结束时间
+////        try {
+////            // 如果获取文件的开始时间小于结束时间
+////            if (startTime != null && endTime != null && startTime.getTime() <= endTime.getTime()) {
+////                // 3、考虑跨年和跨月的情况
+////                // 根据时间获取要查找那些文件夹
+////                List<String> list = getMonthBetween(queryCondition.getStart(), queryCondition.getEnd());
+////
+////                for (String s : list) {
+////                    // 拼接文件夹
+////                    String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator + emblHeader.getTaskID() + File.separator + queryCondition.getStation() + File.separator + s + File.separator;
+////
+////                    Main.logger.info("查找文件的路径为：" + filePath);
+////                    File file = new File(filePath);
+////                    if (file.exists() && file.isDirectory()) {
+////                        fileList.addAll(folderMethod(file, startTime, endTime));
+////                    }
+////                }
+////            } else {
+////                // 非法获取情形
+////                Main.logger.warn("时间非法，请检查!");
+////            }
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
+//        return fileList;
+//    }
+
     public static List<File> findFile(EMBLHeader emblHeader, QueryCondition queryCondition) {
+        Map<String, ArrayList> map = Main.map;
+
         List<File> fileList = new ArrayList<>();
-        DateTime startTime = null;
-        DateTime endTime = null;
+        DateTime startTime = new DateTime();
+        DateTime endTime = new DateTime();
+
+        String newFilePath = null;
 
         if (queryCondition == null) {
             return null;
         }
         if (queryCondition.getStart() == null) {
-            queryCondition.setStart(DateUtil.date(Convert.toDate("2010-01-01 00:00:00")));
-            startTime = queryCondition.getStart();
+            queryCondition.setStart(DateUtil.date(Convert.toDate("2017-01-01 00:00:00")));
         }
+        startTime = queryCondition.getStart();
         if (queryCondition.getEnd() == null) {
             queryCondition.setEnd(DateUtil.date(System.currentTimeMillis()));
-            endTime = queryCondition.getEnd();
         }
+        endTime = queryCondition.getEnd();
         // 1、判断要获取的数据是符合接口规范的
 
         // 2、判断开始时间是否小于结束时间
         try {
             // 如果获取文件的开始时间小于结束时间
-            if (startTime.getTime() < endTime.getTime()) {
+            if (startTime.getTime() <= endTime.getTime()) {
                 // 3、考虑跨年和跨月的情况
                 // 根据时间获取要查找那些文件夹
                 List<String> list = getMonthBetween(queryCondition.getStart(), queryCondition.getEnd());
@@ -169,19 +260,30 @@ public class ProGetRequest {
                 for (String s : list) {
                     // 拼接文件夹
                     String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator;
+
+                    // 1、判断星号是否为空
+                    if (queryCondition.getSatelliteID() == null) {
+                        queryCondition.setSatelliteID(map.get("taskID"));
+                    }
+                    // 2、判断站号是否为空
+                    if (queryCondition.getStation() == null) {
+                        queryCondition.setStation(map.get("station"));
+                    }
                     File file = new File(filePath);
                     if (file.exists() && file.isDirectory()) {
-                        File[] files = file.listFiles();
-                        for (File file1 : files) {
-                            if (file1.exists() && file.isDirectory()) {
-                                File[] files1 = file1.listFiles();
-                                for (File file2 : files1) {
-                                    String newFilePath = file2.toString() + File.separator + s + File.separator;
-                                    File file3 = new File(newFilePath);
-                                    if (file3.exists() && file3.isDirectory()) {
-                                        System.out.println(file3);
-                                        fileList.addAll(folderMethod(file3, startTime, endTime));
-                                    }
+                        List<Integer> satelliteID = queryCondition.getSatelliteID();
+                        List<Integer> station = queryCondition.getStation();
+                        for (int satelliteIDNum = 0; satelliteIDNum < satelliteID.size(); satelliteIDNum++) {
+                            for (int stationNum = 0; stationNum < station.size(); stationNum++) {
+                                if ((Integer) satelliteID.get(satelliteIDNum) != -1) {
+                                    newFilePath = file.toString() + File.separator + satelliteID.get(satelliteIDNum) + File.separator + station.get(stationNum) + File.separator + s + File.separator;
+                                } else {
+                                    newFilePath = file.toString() + File.separator + "4294967295" + File.separator + station.get(stationNum) + File.separator + s + File.separator;
+                                }
+                                File newFile = new File(newFilePath);
+                                if (newFile.exists() && newFile.isDirectory()) {
+                                    System.out.println(newFile);
+                                    fileList.addAll(folderMethod(newFile, startTime, endTime));
                                 }
                             }
                         }
@@ -191,45 +293,11 @@ public class ProGetRequest {
                 // 非法获取情形
                 Main.logger.warn("时间非法，请检查!");
             }
-//        if (emblHeader == null || queryCondition == null) {
-//            return null;
-//        }
-//        List<File> fileList = new ArrayList<>();
-//        DateTime startTime = queryCondition.getStart();
-//        DateTime endTime = queryCondition.getEnd();
-//
-//        // 1、判断要获取的数据是符合接口规范的
-//
-//        // ？？新需求，如果只告诉我数据类型，我要返回所有的文件。2020年9月28日18:02:24
-//
-//        // 2、判断开始时间是否小于结束时间
-//        try {
-//            // 如果获取文件的开始时间小于结束时间
-//            if (startTime != null && endTime != null && startTime.getTime() <= endTime.getTime()) {
-//                // 3、考虑跨年和跨月的情况
-//                // 根据时间获取要查找那些文件夹
-//                List<String> list = getMonthBetween(queryCondition.getStart(), queryCondition.getEnd());
-//
-//                for (String s : list) {
-//                    // 拼接文件夹
-//                    String filePath = "D:\\FTP" + File.separator + ByteStringUtil.decToHex(queryCondition.getDataType(), 8) + File.separator + emblHeader.getTaskID() + File.separator + queryCondition.getStation() + File.separator + s + File.separator;
-//
-//                    Main.logger.info("查找文件的路径为：" + filePath);
-//                    File file = new File(filePath);
-//                    if (file.exists() && file.isDirectory()) {
-//                        fileList.addAll(folderMethod(file, startTime, endTime));
-//                    }
-//                }
-//            } else {
-//                // 非法获取情形
-//                Main.logger.warn("时间非法，请检查!");
-//            }
         } catch (ParseException e) {
             e.printStackTrace();
         }
         return fileList;
     }
-
 
     public static List<File> folderMethod(File file, DateTime startTime, DateTime endTime) {
         List<File> list = new ArrayList<>();
@@ -243,6 +311,7 @@ public class ProGetRequest {
                 Main.logger.info("文件添加：" + flag);
             }
         }
+        System.out.println("===================" + list);
         return list;
     }
 

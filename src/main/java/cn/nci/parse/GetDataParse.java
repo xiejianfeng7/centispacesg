@@ -31,63 +31,69 @@ public class GetDataParse {
     }
 
     public static QueryCondition parseFileRequest(JSONObject jsonObject) {
-        QueryCondition queryCondition = null;
+        QueryCondition queryCondition = new QueryCondition();
+        Object object = null;
         Main.logger.warn("JSON 串参数内容为：" + jsonObject);
-        /*
-            private Short message;              // 自定义4位数字，消息编号，与获取应答消息中的消息编号对应，只填1个
-            private Integer dataType;           // 必填，只填1个
-
-            private List<Integer> satelliteID;  // 卫星标识
-            private List<Integer> freq;         // 填“S”或者“X”
-            private List<Integer> station;
-            private List<Integer> source;       // 源地址
-            private DateTime start;             // 开始时间
-            private DateTime end;               // 结束时间
-            private Integer newFile;            // 最新文件/数据
-            private List<String> param;         // 只有获取或写入数据库数据时填写
-        */
         try {
-            Short message = (Short) jsonObject.getShort("Message");
-            Integer dataType = jsonObject.getInteger("type");
-//            List<Integer> satelliteID = JSONObject.parseArray(jsonObject.getJSONArray("satellite_id").toJSONString(), Integer.class);
-            Object object = jsonObject.get("satellite_id");
-            List<Integer> satelliteID = null;
-            if(object instanceof Integer){
-                List<Integer> list = new ArrayList<>();
-                list.add((Integer)object);
-                satelliteID = list;
-            }else if (object instanceof JSONArray) {
-                try {
-                    satelliteID = JSONObject.parseArray(jsonObject.getJSONArray("satelliteID").toJSONString(), Integer.class);
-                } catch (Exception e) {
-                    System.out.println("satellite_ID 参数类别未找到");
-                }
-            }
-            List<Integer> freq = JSONObject.parseArray(jsonObject.getJSONArray("freq").toJSONString(), Integer.class);
-//            List<Integer> station = JSONObject.parseArray(jsonObject.getJSONArray("station").toJSONString(), Integer.class);
+//            Short message = (Short) jsonObject.getShort("Message");
+//            Integer dataType = jsonObject.getInteger("Type");
+//            Object object = jsonObject.get("satellite_id");
+//            List<Integer> satelliteID = null;
+//            if (object instanceof Integer) {
+//                List<Integer> list = new ArrayList<>();
+//                list.add((Integer) object);
+//                satelliteID = list;
+//            } else if (object instanceof JSONArray) {
+//                try {
+//                    satelliteID = JSONObject.parseArray(jsonObject.getJSONArray("satelliteID").toJSONString(), Integer.class);
+//                } catch (Exception e) {
+//                    System.out.println("satellite_ID 参数类别未找到");
+//                }
+//            }
+//            List<Integer> freq = JSONObject.parseArray(jsonObject.getJSONArray("freq").toJSONString(), Integer.class);
+//            object = jsonObject.get("station");
+//            List<Integer> station = null;
+//            if (object instanceof Integer) {
+//                List<Integer> list = new ArrayList<>();
+//                list.add((Integer) object);
+//                satelliteID = list;
+//            } else if (object instanceof JSONArray) {
+//                try {
+//                    satelliteID = JSONObject.parseArray(jsonObject.getJSONArray("station").toJSONString(), Integer.class);
+//                } catch (Exception e) {
+//                    System.out.println("station 参数类别未找到");
+//                }
+//            }
+//            List<Integer> source = JSONObject.parseArray(jsonObject.getJSONArray("source").toJSONString(), Integer.class);
+//            DateTime start = new DateTime(jsonObject.getTimestamp("start"));
+//            DateTime end = new DateTime(jsonObject.getTimestamp("end"));
+//            Integer newFile = jsonObject.getInteger("new");
+//            List<String> param = JSONObject.parseArray(jsonObject.getJSONArray("param").toJSONString(), String.class);
+//            if (message >= 0 && message <= 9999 && dataType != null) {
+//                queryCondition = new QueryCondition(message, dataType, satelliteID, freq, station, source, start, end, newFile, param);
+//            }
+            queryCondition.setMessage(jsonObject.getShort("Message"));
+            queryCondition.setDataType(jsonObject.getInteger("Type"));
             object = jsonObject.get("station");
             List<Integer> station = null;
-            if(object instanceof Integer){
+            if (object instanceof Integer) {
                 List<Integer> list = new ArrayList<>();
-                list.add((Integer)object);
-                satelliteID = list;
-            }else if (object instanceof JSONArray) {
+                list.add((Integer) object);
+                station = list;
+            } else if (object instanceof JSONArray) {
                 try {
-                    satelliteID = JSONObject.parseArray(jsonObject.getJSONArray("station").toJSONString(), Integer.class);
+                    station = JSONObject.parseArray(jsonObject.getJSONArray("station").toJSONString(), Integer.class);
                 } catch (Exception e) {
                     System.out.println("station 参数类别未找到");
                 }
             }
-            List<Integer> source = JSONObject.parseArray(jsonObject.getJSONArray("source").toJSONString(), Integer.class);
             DateTime start = new DateTime(jsonObject.getTimestamp("start"));
             DateTime end = new DateTime(jsonObject.getTimestamp("end"));
-            Integer newFile = jsonObject.getInteger("new");
-            List<String> param = JSONObject.parseArray(jsonObject.getJSONArray("param").toJSONString(), String.class);
-            if (message >= 0 && message <= 9999 && dataType != null) {
-                queryCondition = new QueryCondition(message, dataType, satelliteID, freq, station, source, start, end, newFile, param);
-            }
+            queryCondition.setStart(start);
+            queryCondition.setEnd(end);
         } catch (Exception e) {
-            Main.logger.error("JSON 串参数不符合接口要求。" + jsonObject);
+//            e.printStackTrace();
+            Main.logger.error("收到的 JSON 串参数不符合接口要求。");
         }
         return queryCondition;
     }

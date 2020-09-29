@@ -118,4 +118,20 @@ public class QueryCondition {
     public void setParam(List<String> param) {
         this.param = param;
     }
+
+    @Override
+    public String toString() {
+        return "QueryCondition{" +
+                "message=" + message +
+                ", dataType=" + dataType +
+                ", satelliteID=" + satelliteID +
+                ", freq=" + freq +
+                ", station=" + station +
+                ", source=" + source +
+                ", start=" + start +
+                ", end=" + end +
+                ", newFile=" + newFile +
+                ", param=" + param +
+                '}';
+    }
 }
