@@ -2,11 +2,10 @@ package cn.nci.parse;
 
 import cn.nci.domain.TelemetryParameters;
 import cn.nci.domain.TelemetryParametersList;
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @program: centispacesg
@@ -35,29 +34,82 @@ public class TelemetryParse {
      *    }
      * }
      */
+//    public static TelemetryParametersList parseName(JSONObject jsonObject) {
+//        TelemetryParametersList parameters = new TelemetryParametersList();
+//        LinkedHashMap<String, TelemetryParameters> map = new LinkedHashMap<>();
+//
+//        parameters.setSatid(jsonObject.getInteger("satid"));
+//        parameters.setTime(jsonObject.getString("time"));
+//        parameters.setPackid(jsonObject.getInteger("packid"));
+//        parameters.setTableName(jsonObject.getString("tablename"));
+//
+//        JSONObject paramlist = jsonObject.getJSONObject("paramlist");
+//        Set<String> set = paramlist.keySet();
+//        Iterator<String> it = set.iterator();
+//        while (it.hasNext()) {
+//            String key = it.next();
+//            JSONObject paramValue = paramlist.getJSONObject(key);
+//            System.out.println(paramValue);
+//            TelemetryParameters param = new TelemetryParameters();
+//            param.setOriginalValue(paramValue.getLong("originalValue"));
+//            param.setEngineerValue(paramValue.getString("engineerValue"));
+//            param.setStateValue(paramValue.getString("stateValue"));
+//            map.put(key, param);
+//        }
+//        parameters.setParam(map);
+//        return parameters;
+//    }
+
+    /**
+     * 遥测包JSON
+     * {
+     * “"satid”： value,      //星号（整数）
+     * “time”: value,          //星上时间（字符串）
+     * “packid”: value,      //包号
+     * “tablename”: value,     //数据库表名（字符串）
+     * “paramlist”:
+     * [
+     * {
+     *  “csdh”:value,     // csdh:参数代号
+     * “name”:value,     // name:参数中文名
+     * “originalValue”:value,   // 原始值（整数）
+     * “engineerValue”:value,   // 工程值（字符串）
+     * “stateValue”:value,   // 状态值（字符串）
+     * },
+     * {
+     *  “csdh”:value,     // csdh:参数代号
+     * “name”:value,     // name:参数中文名
+     * “originalValue”:value,   // 原始值（整数）
+     * “engineerValue”:value,   // 工程值（字符串）
+     * “stateValue”:value,   // 状态值（字符串）
+     * },
+     *      .
+     *      .
+     *      .
+     * ]
+     * }
+     */
     public static TelemetryParametersList parseName(JSONObject jsonObject) {
         TelemetryParametersList parameters = new TelemetryParametersList();
-        LinkedHashMap<String, TelemetryParameters> map = new LinkedHashMap<>();
+        ArrayList<TelemetryParameters> list = new ArrayList<>();
 
         parameters.setSatid(jsonObject.getInteger("satid"));
         parameters.setTime(jsonObject.getString("time"));
         parameters.setPackid(jsonObject.getInteger("packid"));
-        parameters.setTableName(jsonObject.getString("tablename"));
-
-        JSONObject paramlist = jsonObject.getJSONObject("paramlist");
-        Set<String> set = paramlist.keySet();
-        Iterator<String> it = set.iterator();
-        while (it.hasNext()) {
-            String key = it.next();
-            JSONObject paramValue = paramlist.getJSONObject(key);
-            System.out.println(paramValue);
+        parameters.setTableame(jsonObject.getString("tablename"));
+        JSONArray paramlist = jsonObject.getJSONArray("paramlist");
+        for (int i = 0; i < paramlist.size(); i++) {
             TelemetryParameters param = new TelemetryParameters();
+            JSONObject paramValue = paramlist.getJSONObject(i);
+
+            param.setCsdh(paramValue.getString("csdh"));
+            param.setName(paramValue.getString("name"));
             param.setOriginalValue(paramValue.getLong("originalValue"));
             param.setEngineerValue(paramValue.getString("engineerValue"));
             param.setStateValue(paramValue.getString("stateValue"));
-            map.put(key, param);
+            list.add(param);
         }
-        parameters.setParam(map);
+        parameters.setParamlist(list);
         return parameters;
     }
 }

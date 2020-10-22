@@ -35,21 +35,7 @@ public class GetDataParse {
         Object object = null;
         Main.logger.warn("JSON 串参数内容为：" + jsonObject);
         try {
-//            Short message = (Short) jsonObject.getShort("Message");
-//            Integer dataType = jsonObject.getInteger("Type");
-//            Object object = jsonObject.get("satellite_id");
-//            List<Integer> satelliteID = null;
-//            if (object instanceof Integer) {
-//                List<Integer> list = new ArrayList<>();
-//                list.add((Integer) object);
-//                satelliteID = list;
-//            } else if (object instanceof JSONArray) {
-//                try {
-//                    satelliteID = JSONObject.parseArray(jsonObject.getJSONArray("satelliteID").toJSONString(), Integer.class);
-//                } catch (Exception e) {
-//                    System.out.println("satellite_ID 参数类别未找到");
-//                }
-//            }
+
 //            List<Integer> freq = JSONObject.parseArray(jsonObject.getJSONArray("freq").toJSONString(), Integer.class);
 //            object = jsonObject.get("station");
 //            List<Integer> station = null;
@@ -72,8 +58,28 @@ public class GetDataParse {
 //            if (message >= 0 && message <= 9999 && dataType != null) {
 //                queryCondition = new QueryCondition(message, dataType, satelliteID, freq, station, source, start, end, newFile, param);
 //            }
+            // 文件/数据获取参数
+            // 获取Message
             queryCondition.setMessage(jsonObject.getShort("Message"));
+            // 获取Type
             queryCondition.setDataType(jsonObject.getInteger("Type"));
+            // 获取satellite_id
+            object = jsonObject.get("satellite_id");
+            List<Integer> satelliteID = null;
+            if (object instanceof Integer) {
+                List<Integer> list = new ArrayList<>();
+                list.add((Integer) object);
+                satelliteID = list;
+            } else if (object instanceof JSONArray) {
+                try {
+                    satelliteID = JSONObject.parseArray(jsonObject.getJSONArray("satelliteID").toJSONString(), Integer.class);
+                } catch (Exception e) {
+                    System.out.println("satellite_ID 参数类别未找到");
+                }
+            }
+            queryCondition.setSatelliteID(satelliteID);
+
+
             object = jsonObject.get("station");
             List<Integer> station = null;
             if (object instanceof Integer) {

@@ -7,6 +7,8 @@ package cn.nci.domain;
  * @create: 2020-08-11 14:18
  */
 public class TelemetryParameters {
+    private String csdh;
+    private String name;
     private Long originalValue;
     private String engineerValue;
     private String stateValue;
@@ -14,10 +16,28 @@ public class TelemetryParameters {
     public TelemetryParameters() {
     }
 
-    public TelemetryParameters(Long originalValue, String engineerValue, String stateValue) {
+    public TelemetryParameters(String csdn, String name, Long originalValue, String engineerValue, String stateValue) {
+        this.csdh = csdh;
+        this.name = name;
         this.originalValue = originalValue;
         this.engineerValue = engineerValue;
         this.stateValue = stateValue;
+    }
+
+    public String getCsdh() {
+        return csdh;
+    }
+
+    public void setCsdh(String csdh) {
+        this.csdh = csdh;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Long getOriginalValue() {
@@ -47,7 +67,9 @@ public class TelemetryParameters {
     @Override
     public String toString() {
         return "TelemetryParameters{" +
-                "originalValue=" + originalValue +
+                "csdn='" + csdh + '\'' +
+                ", name='" + name + '\'' +
+                ", originalValue=" + originalValue +
                 ", engineerValue='" + engineerValue + '\'' +
                 ", stateValue='" + stateValue + '\'' +
                 '}';

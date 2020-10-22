@@ -1,6 +1,6 @@
 package cn.nci.domain;
 
-import java.util.LinkedHashMap;
+import java.util.ArrayList;
 
 /**
  * @program: centispacesg
@@ -13,18 +13,18 @@ public class TelemetryParametersList {
     private Integer satid;
     private String time;
     private Integer packid;
-    private String tableName;
-    private LinkedHashMap<String,TelemetryParameters> param;
+    private String tableame;
+    private ArrayList<TelemetryParameters> paramlist;
 
     public TelemetryParametersList() {
     }
 
-    public TelemetryParametersList(Integer satid, String time, Integer packid, String tableName, LinkedHashMap<String, TelemetryParameters> param) {
+    public TelemetryParametersList(Integer satid, String time, Integer packid, String tableame, ArrayList<TelemetryParameters> paramlist) {
         this.satid = satid;
         this.time = time;
         this.packid = packid;
-        this.tableName = tableName;
-        this.param = param;
+        this.tableame = tableame;
+        this.paramlist = paramlist;
     }
 
     public Integer getSatid() {
@@ -51,20 +51,20 @@ public class TelemetryParametersList {
         this.packid = packid;
     }
 
-    public String getTableName() {
-        return tableName;
+    public String getTableame() {
+        return tableame;
     }
 
-    public void setTableName(String tableName) {
-        this.tableName = tableName;
+    public void setTableame(String tableame) {
+        this.tableame = tableame;
     }
 
-    public LinkedHashMap<String, TelemetryParameters> getParam() {
-        return param;
+    public ArrayList<TelemetryParameters> getParamlist() {
+        return paramlist;
     }
 
-    public void setParam(LinkedHashMap<String, TelemetryParameters> param) {
-        this.param = param;
+    public void setParamlist(ArrayList<TelemetryParameters> paramlist) {
+        this.paramlist = paramlist;
     }
 
     @Override
@@ -73,8 +73,8 @@ public class TelemetryParametersList {
                 "satid=" + satid +
                 ", time='" + time + '\'' +
                 ", packid=" + packid +
-                ", tableName='" + tableName + '\'' +
-                ", param=" + param +
+                ", tableame='" + tableame + '\'' +
+                ", paramlist=" + paramlist +
                 '}';
     }
 }
