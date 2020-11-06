@@ -31,33 +31,41 @@ public class TelemetryALiDaoImpl implements TelemetryALiDao {
         ArrayList<TelemetryALi> paramlist = telemetryALiList.getParamlist();
         Iterator<TelemetryALi> it = paramlist.iterator();
         TelemetryALi telemetryALi;
-        // 插入操作
-        if ("insert".equals(option)) {
-            while (it.hasNext()) {
-                telemetryALi = it.next();
-                name.append(telemetryALi.getName() + ",");
-                value.append("\'" + telemetryALi.getValue() + "\',");
+        try {
+            // 插入操作
+            if ("insert".equals(option)) {
+                while (it.hasNext()) {
+                    telemetryALi = it.next();
+                    name.append(telemetryALi.getName() + ",");
+                    if (telemetryALi.getValue().contains(":")) {
+                        value.append("\'" + telemetryALi.getValue() + "\',");
+                    } else {
+                        value.append(telemetryALi.getValue() + ",");
+                    }
+                }
+                name.deleteCharAt(name.length() - 1);
+                value.deleteCharAt(value.length() - 1);
+                insert = "insert into " + tableName + "(" + name + ") values " + "(" + value + ");";
+                System.out.println(insert);
+                jdbcTemplate.update(insert);
             }
-            name.deleteCharAt(name.length() - 1);
-            value.deleteCharAt(value.length() - 1);
-            insert = "insert into " + tableName + " (" + name + ") values " + "(" + value + ");";
-            jdbcTemplate.update(insert);
-            System.out.println(insert);
-        }
-        // 更新操作
-        else if ("update".equals(option)) {
-            while (it.hasNext()) {
-                telemetryALi = it.next();
-                update.append(telemetryALi.getValue() + "=" + telemetryALi.getValue() + ",");
+            // 更新操作
+            else if ("update".equals(option)) {
+                while (it.hasNext()) {
+                    telemetryALi = it.next();
+                    update.append(telemetryALi.getName() + "=\'" + telemetryALi.getValue() + "\',");
+                }
+                update.replace(update.length() - 1, update.length(), ";");
+//                System.out.println(update);
+                jdbcTemplate.update(update.toString());
             }
-            update.replace(update.length() - 1, update.length(), ";");
-
-            jdbcTemplate.update(update.toString());
-            System.out.println(update);
-        }
-        // 其他处理
-        else {
-            System.out.println(telemetryALiList);
+            // 其他处理
+            else {
+                System.out.println(telemetryALiList);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("出现异常");
         }
     }
 }
