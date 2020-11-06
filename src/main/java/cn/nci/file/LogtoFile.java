@@ -43,21 +43,4 @@ public class LogtoFile {
             e.printStackTrace();
         }
     }
-
-//    public void logtoFile(String logPath, byte[] content, int contentLength) {
-//        try {
-//            File writeName = new File(logPath);
-//            writeName.createNewFile();
-//            try (FileOutputStream fileOutputStream = new FileOutputStream(writeName, true);
-//                 BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream)) {
-//                if (!bufferedOutputStream.equals(0)) {
-//                    bufferedOutputStream.write(content, 0, contentLength);
-//                    bufferedOutputStream.write('\n');
-//                }
-//                bufferedOutputStream.flush();
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
 }
