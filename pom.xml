@@ -185,7 +185,10 @@
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>3.1.0</version>
                 </plugin>
-
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.0.2</version>
+                </plugin>
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.0</version>
@@ -216,13 +219,16 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-        <resources>
-            <!--指定src/main/resources资源要过滤-->
-            <resource>
-                <directory>src/main/resources</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
+        <!--<resources>-->
+            <!--&lt;!&ndash;指定src/main/resources资源要过滤&ndash;&gt;-->
+            <!--<resource>-->
+                <!--<directory>src/main/resources</directory>-->
+                <!--<excludes>-->
+                    <!--<exclude>*.json</exclude>-->
+                    <!--<exclude>*.properties</exclude>-->
+                <!--</excludes>-->
+            <!--</resource>-->
+        <!--</resources>-->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -250,59 +256,23 @@
                     </excludes>
                 </configuration>
             </plugin>
-            <!-- 依赖包插件 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>copy-dependencies</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>copy-dependencies</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.directory}/etc/lib</outputDirectory>
-                            <!-- 是否不包含间接依赖 -->
-                            <excludeTransitive>false</excludeTransitive>
-                            <!-- 忽略版本 -->
-                            <stripVersion>false</stripVersion>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.18.1</version>
-                <configuration>
-                    <skipTests>true</skipTests>
-                </configuration>
-            </plugin>
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
-                <version>3.0.2</version>
                 <executions>
                     <execution>
                         <id>copy-resources</id>
-                        <!-- here the phase you need -->
-                        <phase>package</phase>
+                        <phase>validate</phase>
                         <goals>
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${project.build.directory}/etc</outputDirectory>
+                            <outputDirectory>${project.build.directory}/conf</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>src/main/resources</directory>
-                                    <includes>
-                                        <exclude>*.json</exclude>
-                                        <exclude>*.properties</exclude>
-                                    </includes>
                                     <filtering>true</filtering>
                                 </resource>
                             </resources>
-                            <encoding>UTF-8</encoding>
                         </configuration>
                     </execution>
                 </executions>
