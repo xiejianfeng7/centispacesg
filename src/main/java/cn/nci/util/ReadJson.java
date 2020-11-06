@@ -10,17 +10,15 @@ import java.io.*;
  */
 public class ReadJson {
     public static String getJson(String jsonPath) {
-        String jsonStr = "";
+        String jsonStr;
         try {
-            File file = new File(jsonPath);
-            FileReader fileReader = new FileReader(file);
-            Reader reader = new InputStreamReader(new FileInputStream(file), "Utf-8");
+            InputStream in = ReadJson.class.getClassLoader().getResourceAsStream(jsonPath);
+            Reader reader = new InputStreamReader(in, "Utf-8");
             int ch = 0;
             StringBuffer sb = new StringBuffer();
             while ((ch = reader.read()) != -1) {
                 sb.append((char) ch);
             }
-            fileReader.close();
             reader.close();
             jsonStr = sb.toString();
             return jsonStr;

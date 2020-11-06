@@ -28,13 +28,13 @@ public class Main {
     public static Logger logger = Logger.getLogger(Main.class);
 
     // 初始化embl接口文件
-    public static Map<String, ArrayList> map = EMBLInit.init("src/main/resources/emblconfig.json");
+    public static Map<String, ArrayList> map = EMBLInit.init("emblconfig.json");
 
     // 初始化FTP账号相关信息
     FtpClientUtil clientUtil = null;
     {
         try {
-            clientUtil = FtpClientUtil.getInstance("src/main/resources/ftpconfig.json","localWorkPath");
+            clientUtil = FtpClientUtil.getInstance("ftpconfig.json","localWorkPath");
         } catch (Exception e) {
             Main.logger.error("FTP账号配置文件初始化失败。");
         }
@@ -45,7 +45,7 @@ public class Main {
                 60L, TimeUnit.SECONDS,
                 new SynchronousQueue<Runnable>());
 
-        List<MulticastAddress> list = MulticastInit.init("src/main/resources/udpconfig.json");
+        List<MulticastAddress> list = MulticastInit.init("udpconfig.json");
         Iterator<MulticastAddress> it = list.iterator();
         while (it.hasNext()) {
             MulticastAddress ma = it.next();

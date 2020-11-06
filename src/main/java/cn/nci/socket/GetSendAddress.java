@@ -42,7 +42,7 @@ public class GetSendAddress {
     }
 
     public static void main(String[] args) {
-        SendAddress sendAddress = GetSendAddress.init("src/main/resources/udpsendconfig.json", "GBDZ");
+        SendAddress sendAddress = GetSendAddress.init("udpsendconfig.json", "GBDZ");
         System.out.println(sendAddress);
     }
 }
