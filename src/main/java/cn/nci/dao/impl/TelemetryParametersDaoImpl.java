@@ -23,7 +23,7 @@ public class TelemetryParametersDaoImpl implements TelemetryParametersDao {
     public void save(TelemetryParametersList telemetryParametersList) {
         String signalSatTime = telemetryParametersList.getTime();
 
-        String tableName = telemetryParametersList.getTableame();
+        String tableName = telemetryParametersList.gettablename();
         if (!AutoCreateTable.isTableExist(tableName)) {
             String createBrandDatabase =
                     "CREATE TABLE `" + tableName + "`  (\n" +

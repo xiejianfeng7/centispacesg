@@ -1,12 +1,15 @@
 package cn.nci.parse;
 
 import cn.nci.domain.EMBLHeader;
+import cn.nci.domain.TelemetryALiList;
 import cn.nci.domain.TelemetryParametersList;
 import cn.nci.file.CreateFile;
 import cn.nci.file.LogtoFile;
 import cn.nci.service.EMBLHeaderService;
+import cn.nci.service.TelemetryALiService;
 import cn.nci.service.TelemetryParametersService;
 import cn.nci.service.impl.EMBLHeaderServiceImpl;
+import cn.nci.service.impl.TelemetryALiServiceImpl;
 import cn.nci.service.impl.TelemetryParametersServiceImpl;
 import cn.nci.socket.EMBLInit;
 import cn.nci.util.ByteUtil;
@@ -23,9 +26,11 @@ import java.util.List;
  */
 public class DatagramParse {
     public static void parseDatagram(byte[] data, int length) {
+        JSONObject jsonObject;
         EMBLHeader emblHeader = new EMBLHeader();
         EMBLHeaderService productService = new EMBLHeaderServiceImpl();
         TelemetryParametersService parametersService = new TelemetryParametersServiceImpl();
+        TelemetryALiService telemetryALiService = new TelemetryALiServiceImpl();
         List<EMBLHeader> list = new ArrayList<>(100);
 
         emblHeader.setTaskID(ByteUtil.readUnsignedIntL(data, 0));
@@ -56,11 +61,18 @@ public class DatagramParse {
         list.add(emblHeader);
         productService.save(list);
 
+        jsonObject = JSONObject.parseObject(new String(content));
+
         // 单独处理遥测数据入库信息
         if (0x00110501 == emblHeader.getDataTypeID()) {
-            JSONObject jsonObject = JSONObject.parseObject(new String(content));
+            jsonObject = JSONObject.parseObject(new String(content));
             TelemetryParametersList parseName = TelemetryParse.parseName(jsonObject);
             parametersService.save(parseName);
+        }
+        // 单独处理存入阿里的遥测数据
+        else if (0x0013FFFF == emblHeader.getDataTypeID()) {
+            TelemetryALiList telemetryALiList = TelemetryParse.parseALiName(jsonObject);
+            telemetryALiService.save(telemetryALiList);
         }
 
         // 文件获取申请消息

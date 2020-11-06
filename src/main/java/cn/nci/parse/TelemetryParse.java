@@ -1,5 +1,7 @@
 package cn.nci.parse;
 
+import cn.nci.domain.TelemetryALi;
+import cn.nci.domain.TelemetryALiList;
 import cn.nci.domain.TelemetryParameters;
 import cn.nci.domain.TelemetryParametersList;
 import com.alibaba.fastjson.JSONArray;
@@ -96,7 +98,7 @@ public class TelemetryParse {
         parameters.setSatid(jsonObject.getInteger("satid"));
         parameters.setTime(jsonObject.getString("time"));
         parameters.setPackid(jsonObject.getInteger("packid"));
-        parameters.setTableame(jsonObject.getString("tablename"));
+        parameters.settablename(jsonObject.getString("tablename"));
         JSONArray paramlist = jsonObject.getJSONArray("paramlist");
         for (int i = 0; i < paramlist.size(); i++) {
             TelemetryParameters param = new TelemetryParameters();
@@ -107,6 +109,25 @@ public class TelemetryParse {
             param.setOriginalValue(paramValue.getLong("originalValue"));
             param.setEngineerValue(paramValue.getString("engineerValue"));
             param.setStateValue(paramValue.getString("stateValue"));
+            list.add(param);
+        }
+        parameters.setParamlist(list);
+        return parameters;
+    }
+
+    public static TelemetryALiList parseALiName(JSONObject jsonObject) {
+        TelemetryALiList parameters = new TelemetryALiList();
+        ArrayList<TelemetryALi> list = new ArrayList<>();
+
+        parameters.setTablename(jsonObject.getString("tablename"));
+        parameters.setOpr(jsonObject.getString("opr"));
+        JSONArray paramlist = jsonObject.getJSONArray("paramlist");
+        for (int i = 0; i < paramlist.size(); i++) {
+            TelemetryALi param = new TelemetryALi();
+            JSONObject paramValue = paramlist.getJSONObject(i);
+
+            param.setName(paramValue.getString("name"));
+            param.setValue(paramValue.getString("value"));
             list.add(param);
         }
         parameters.setParamlist(list);

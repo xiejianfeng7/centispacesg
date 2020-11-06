@@ -13,17 +13,17 @@ public class TelemetryParametersList {
     private Integer satid;
     private String time;
     private Integer packid;
-    private String tableame;
+    private String tablename;
     private ArrayList<TelemetryParameters> paramlist;
 
     public TelemetryParametersList() {
     }
 
-    public TelemetryParametersList(Integer satid, String time, Integer packid, String tableame, ArrayList<TelemetryParameters> paramlist) {
+    public TelemetryParametersList(Integer satid, String time, Integer packid, String tablename, ArrayList<TelemetryParameters> paramlist) {
         this.satid = satid;
         this.time = time;
         this.packid = packid;
-        this.tableame = tableame;
+        this.tablename = tablename;
         this.paramlist = paramlist;
     }
 
@@ -51,12 +51,12 @@ public class TelemetryParametersList {
         this.packid = packid;
     }
 
-    public String getTableame() {
-        return tableame;
+    public String gettablename() {
+        return tablename;
     }
 
-    public void setTableame(String tableame) {
-        this.tableame = tableame;
+    public void settablename(String tablename) {
+        this.tablename = tablename;
     }
 
     public ArrayList<TelemetryParameters> getParamlist() {
@@ -73,7 +73,7 @@ public class TelemetryParametersList {
                 "satid=" + satid +
                 ", time='" + time + '\'' +
                 ", packid=" + packid +
-                ", tableame='" + tableame + '\'' +
+                ", tablename='" + tablename + '\'' +
                 ", paramlist=" + paramlist +
                 '}';
     }
