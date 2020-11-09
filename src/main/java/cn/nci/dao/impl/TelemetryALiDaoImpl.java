@@ -3,9 +3,10 @@ package cn.nci.dao.impl;
 import cn.nci.dao.TelemetryALiDao;
 import cn.nci.domain.TelemetryALi;
 import cn.nci.domain.TelemetryALiList;
-import cn.nci.util.JDBCUtilsOpt;
-import org.springframework.jdbc.core.JdbcTemplate;
+import cn.nci.util.JDBCUtils;
 
+import java.sql.Connection;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -16,7 +17,8 @@ import java.util.Iterator;
  * @create: 2020-07-24 14:21
  */
 public class TelemetryALiDaoImpl implements TelemetryALiDao {
-    JdbcTemplate jdbcTemplate = new JdbcTemplate(JDBCUtilsOpt.getDataSource());
+    Connection conn = JDBCUtils.getConnection();
+    Statement stmt;
 
     @Override
     public void save(TelemetryALiList telemetryALiList) {
@@ -47,7 +49,8 @@ public class TelemetryALiDaoImpl implements TelemetryALiDao {
                 value.deleteCharAt(value.length() - 1);
                 insert = "insert into " + tableName + "(" + name + ") values " + "(" + value + ");";
                 System.out.println(insert);
-                jdbcTemplate.update(insert);
+                stmt = conn.createStatement();
+                stmt.execute(insert);
             }
             // 更新操作
             else if ("update".equals(option)) {
@@ -57,7 +60,8 @@ public class TelemetryALiDaoImpl implements TelemetryALiDao {
                 }
                 update.replace(update.length() - 1, update.length(), ";");
 //                System.out.println(update);
-                jdbcTemplate.update(update.toString());
+                stmt = conn.createStatement();
+                stmt.execute(update.toString());
             }
             // 其他处理
             else {
@@ -65,7 +69,7 @@ public class TelemetryALiDaoImpl implements TelemetryALiDao {
             }
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("出现异常");
+            System.out.println(tableName + "出现异常");
         }
     }
 }

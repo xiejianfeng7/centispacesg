@@ -215,3 +215,25 @@ systemctl restart mysqld.service
 
 1. 如何做到数据热迁移？不中断业务，不造成数据丢失，修改数据存放目录。
 2. 程序可以使用两套及以上数据库。根据开关配置选择要操作哪个库。
+
+SQL的数据类型与Java数据类型的对应关系
+SQL数据类型 Java数据类型
+CHAR                          String
+VARCHAR                  String
+LONGVARCHAR        String
+NUMERIC                   java.math.BigDecimal
+DECIMAL                     java.math.BigDecimal
+BIT                                  boolean
+TINYINT                         byte
+SMALLINT                      short
+INTEGER                        int
+BIGINT                             long
+REAL                                float
+FLOAT                              double
+DOUBLE                          double
+BINARY                             byte[]
+VARBINARY                      byte[]
+LONGVARBINARY          byte[]
+DATE                                 java.sql.Date
+TIME                                  java.sql.Time
+TIMESTAMP                     java.sql.Timestamp

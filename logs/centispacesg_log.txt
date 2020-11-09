@@ -23554,3 +23554,47 @@
 2020-11-06 17:37:37 [ INFO] - cn.nci.main.Main -MulticastReceive.java(34) -生产者线程启动成功！组播地址：232.100.100.100，端口：10000
 2020-11-06 17:37:37 [ INFO] - cn.nci.main.Main -MulticastParse.java(27) -消费者线程启动成功！
 2020-11-06 17:37:40 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(1002) -{dataSource-1} inited
+2020-11-09 09:42:52 [ INFO] - cn.nci.main.Main -EMBLInit.java(41) -EMBL包头信息初始化完成。
+2020-11-09 09:42:52 [ INFO] - cn.nci.main.Main -MulticastReceive.java(34) -生产者线程启动成功！组播地址：232.100.100.100，端口：10000
+2020-11-09 09:42:52 [ INFO] - cn.nci.main.Main -MulticastParse.java(27) -消费者线程启动成功！
+2020-11-09 10:10:23 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(1002) -{dataSource-1} inited
+2020-11-09 10:15:24 [ INFO] - cn.nci.main.Main -EMBLInit.java(41) -EMBL包头信息初始化完成。
+2020-11-09 10:15:24 [ INFO] - cn.nci.main.Main -MulticastParse.java(27) -消费者线程启动成功！
+2020-11-09 10:15:24 [ INFO] - cn.nci.main.Main -MulticastReceive.java(34) -生产者线程启动成功！组播地址：232.100.100.100，端口：10000
+2020-11-09 10:16:22 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(1002) -{dataSource-1} inited
+2020-11-09 10:26:17 [ INFO] - cn.nci.main.Main -EMBLInit.java(41) -EMBL包头信息初始化完成。
+2020-11-09 10:26:17 [ INFO] - cn.nci.main.Main -MulticastReceive.java(34) -生产者线程启动成功！组播地址：232.100.100.100，端口：10000
+2020-11-09 10:26:17 [ INFO] - cn.nci.main.Main -MulticastParse.java(27) -消费者线程启动成功！
+2020-11-09 10:26:19 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(1002) -{dataSource-1} inited
+2020-11-09 10:27:30 [ INFO] - cn.nci.main.Main -EMBLInit.java(41) -EMBL包头信息初始化完成。
+2020-11-09 10:27:30 [ INFO] - cn.nci.main.Main -MulticastParse.java(27) -消费者线程启动成功！
+2020-11-09 10:27:30 [ INFO] - cn.nci.main.Main -MulticastReceive.java(34) -生产者线程启动成功！组播地址：232.100.100.100，端口：10000
+2020-11-09 10:27:33 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(1002) -{dataSource-1} inited
+2020-11-09 10:28:10 [ INFO] - cn.nci.main.Main -EMBLInit.java(41) -EMBL包头信息初始化完成。
+2020-11-09 10:28:10 [ INFO] - cn.nci.main.Main -MulticastReceive.java(34) -生产者线程启动成功！组播地址：232.100.100.100，端口：10000
+2020-11-09 10:28:10 [ INFO] - cn.nci.main.Main -MulticastParse.java(27) -消费者线程启动成功！
+2020-11-09 10:28:14 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(1002) -{dataSource-1} inited
+2020-11-09 10:31:07 [ INFO] - cn.nci.main.Main -EMBLInit.java(41) -EMBL包头信息初始化完成。
+2020-11-09 10:31:07 [ INFO] - cn.nci.main.Main -MulticastReceive.java(34) -生产者线程启动成功！组播地址：232.100.100.100，端口：10000
+2020-11-09 10:31:07 [ INFO] - cn.nci.main.Main -MulticastParse.java(27) -消费者线程启动成功！
+2020-11-09 10:31:19 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(1002) -{dataSource-1} inited
+2020-11-09 10:40:03 [ INFO] - cn.nci.main.Main -EMBLInit.java(41) -EMBL包头信息初始化完成。
+2020-11-09 10:40:03 [ INFO] - cn.nci.main.Main -MulticastReceive.java(34) -生产者线程启动成功！组播地址：232.100.100.100，端口：10000
+2020-11-09 10:40:03 [ INFO] - cn.nci.main.Main -MulticastParse.java(27) -消费者线程启动成功！
+2020-11-09 10:40:06 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(1002) -{dataSource-1} inited
+2020-11-09 10:43:13 [ INFO] - cn.nci.main.Main -EMBLInit.java(41) -EMBL包头信息初始化完成。
+2020-11-09 10:43:13 [ INFO] - cn.nci.main.Main -MulticastReceive.java(34) -生产者线程启动成功！组播地址：232.100.100.100，端口：10000
+2020-11-09 10:43:13 [ INFO] - cn.nci.main.Main -MulticastParse.java(27) -消费者线程启动成功！
+2020-11-09 10:43:18 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(1002) -{dataSource-1} inited
+2020-11-09 10:53:05 [ INFO] - cn.nci.main.Main -EMBLInit.java(41) -EMBL包头信息初始化完成。
+2020-11-09 10:53:05 [ INFO] - cn.nci.main.Main -MulticastReceive.java(34) -生产者线程启动成功！组播地址：232.100.100.100，端口：10000
+2020-11-09 10:53:05 [ INFO] - cn.nci.main.Main -MulticastParse.java(27) -消费者线程启动成功！
+2020-11-09 10:53:09 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(1002) -{dataSource-1} inited
+2020-11-09 11:51:26 [ INFO] - cn.nci.main.Main -EMBLInit.java(41) -EMBL包头信息初始化完成。
+2020-11-09 11:51:26 [ INFO] - cn.nci.main.Main -MulticastParse.java(27) -消费者线程启动成功！
+2020-11-09 11:51:26 [ INFO] - cn.nci.main.Main -MulticastReceive.java(34) -生产者线程启动成功！组播地址：232.100.100.100，端口：10000
+2020-11-09 11:51:30 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(1002) -{dataSource-1} inited
+2020-11-09 11:52:54 [ INFO] - cn.nci.main.Main -EMBLInit.java(41) -EMBL包头信息初始化完成。
+2020-11-09 11:52:54 [ INFO] - cn.nci.main.Main -MulticastReceive.java(34) -生产者线程启动成功！组播地址：232.100.100.100，端口：10000
+2020-11-09 11:52:54 [ INFO] - cn.nci.main.Main -MulticastParse.java(27) -消费者线程启动成功！
+2020-11-09 11:52:57 [ INFO] - com.alibaba.druid.pool.DruidDataSource -DruidDataSource.java(1002) -{dataSource-1} inited
