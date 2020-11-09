@@ -17,23 +17,27 @@ import java.util.Iterator;
  * @create: 2020-07-24 14:21
  */
 public class TelemetryALiDaoImpl implements TelemetryALiDao {
+    // 获取数据库连接
     Connection conn = JDBCUtils.getConnection();
     Statement stmt;
+    StringBuilder name = new StringBuilder();
+    StringBuilder value = new StringBuilder();
+    StringBuilder update = new StringBuilder();
+    String insert;
 
     @Override
     public void save(TelemetryALiList telemetryALiList) {
         String tableName = telemetryALiList.getTablename();
         String option = telemetryALiList.getOpr();
-        StringBuilder name = new StringBuilder();
-        StringBuilder value = new StringBuilder();
-        String insert;
-        StringBuilder update = new StringBuilder();
         update.append("update " + tableName + " set ");
 
         ArrayList<TelemetryALi> paramlist = telemetryALiList.getParamlist();
         Iterator<TelemetryALi> it = paramlist.iterator();
         TelemetryALi telemetryALi;
+
         try {
+            //
+            stmt = conn.createStatement();
             // 插入操作
             if ("insert".equals(option)) {
                 while (it.hasNext()) {
@@ -49,7 +53,6 @@ public class TelemetryALiDaoImpl implements TelemetryALiDao {
                 value.deleteCharAt(value.length() - 1);
                 insert = "insert into " + tableName + "(" + name + ") values " + "(" + value + ");";
                 System.out.println(insert);
-                stmt = conn.createStatement();
                 stmt.execute(insert);
             }
             // 更新操作
@@ -60,7 +63,6 @@ public class TelemetryALiDaoImpl implements TelemetryALiDao {
                 }
                 update.replace(update.length() - 1, update.length(), ";");
 //                System.out.println(update);
-                stmt = conn.createStatement();
                 stmt.execute(update.toString());
             }
             // 其他处理

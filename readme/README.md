@@ -237,3 +237,8 @@ LONGVARBINARY          byte[]
 DATE                                 java.sql.Date
 TIME                                  java.sql.Time
 TIMESTAMP                     java.sql.Timestamp
+
+MySql中字段类型与长度和取值范围解析
+在《阿里巴巴Java编程规范》，明确提出使用Decimal取代double和float。
+ 为整型指定宽度，如INT(11)，对于存储来说INT(1)和INT(20)是相同的，它不会限制值的合法范围，只是规定了MySQL与客户端的交互应该显示多少位而已，比如你向INT(1)中插入了123456值，数据库中其实已经存入了123456，只是对于客户端查出来是1而已。
+ 

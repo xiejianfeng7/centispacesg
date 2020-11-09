@@ -17,6 +17,8 @@ import java.util.Properties;
  * @author xiejianfeng
  * @date 2020-06-01
  * @time 10:56
+ *
+ * 使用druid框架连接数据库
  */
 
 /**

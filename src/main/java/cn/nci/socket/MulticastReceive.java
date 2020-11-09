@@ -19,8 +19,8 @@ import java.util.concurrent.TimeUnit;
 public class MulticastReceive implements Runnable {
     // 是否在运行标志
     private volatile boolean isRunning = true;
-    private String groupHost = null;            // 组播地址
-    private int port = 0;                       // 端口号
+    private String groupHost;               // 组播地址
+    private int port;                       // 端口号
     private BlockingQueue<DatagramPacket> queue;
 
     public MulticastReceive(String groupHost, int port, BlockingQueue<DatagramPacket> queue) {

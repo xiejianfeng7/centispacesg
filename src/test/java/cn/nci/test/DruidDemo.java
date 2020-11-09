@@ -1,4 +1,6 @@
-package cn.nci.util;
+package cn.nci.test;
+
+import cn.nci.util.JDBCUtilsOpt;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

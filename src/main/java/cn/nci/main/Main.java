@@ -50,7 +50,7 @@ public class Main {
         while (it.hasNext()) {
             MulticastAddress ma = it.next();
             if (ma.getIsCreate() == 1) {
-                // 声明一个容量为10的缓存队列
+                // 声明一个容量为65535的缓存队列
                 BlockingQueue<DatagramPacket> queue = new ArrayBlockingQueue<>(65535);
                 // new 生产者和消费者
                 MulticastReceive multicastReceive = new MulticastReceive(ma.getGroupHost(), ma.getPort(), queue);

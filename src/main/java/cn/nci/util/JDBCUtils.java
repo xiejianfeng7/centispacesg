@@ -11,6 +11,7 @@ import java.util.Properties;
  * @author xiejianfeng
  * @date 2020-05-26
  * @time 11:46
+ * 原生的数据库连接操作方法
  *
  * 操作数据库的工具类
  */
