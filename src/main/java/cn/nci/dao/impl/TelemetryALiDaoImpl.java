@@ -67,7 +67,7 @@ public class TelemetryALiDaoImpl implements TelemetryALiDao {
 //            Main.logger.info(sql);
             // 数据批量入库，攒10条数据入库
             stmt.addBatch(sql.toString());
-            if (++count % 5 == 0) {
+            if (++count % 10 == 0) {
                 long start = System.currentTimeMillis();
                 int[] batch = stmt.executeBatch();
                 long end = System.currentTimeMillis();
