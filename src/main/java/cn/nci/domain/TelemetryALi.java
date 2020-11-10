@@ -10,14 +10,6 @@ public class TelemetryALi {
     private String name;
     private String value;
 
-    @Override
-    public String toString() {
-        return "TelemetryALi{" +
-                "name='" + name + '\'' +
-                ", value='" + value + '\'' +
-                '}';
-    }
-
     public String getName() {
         return name;
     }
@@ -32,5 +24,13 @@ public class TelemetryALi {
 
     public void setValue(String value) {
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return "TelemetryALi{" +
+                "name='" + name + '\'' +
+                ", value='" + value + '\'' +
+                '}';
     }
 }

@@ -17,6 +17,7 @@ import java.util.Properties;
  */
 public class JDBCUtils {
     public static Connection connection;
+    public static Statement statement;
     static {
         Properties properties = new Properties();
         // 使用ClassLoader加载properties配置文件生成对应的输入流
@@ -36,6 +37,7 @@ public class JDBCUtils {
 
             // 获取数据库连接
             connection = DriverManager.getConnection(url, username, password);
+            statement = connection.createStatement();
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -52,6 +54,14 @@ public class JDBCUtils {
      */
     public static Connection getConnection() {
         return connection;
+    }
+
+    /**
+     * 获取批处理对象
+     * @return
+     */
+    public static Statement getStatement() {
+        return statement;
     }
 
     /**

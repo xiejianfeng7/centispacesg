@@ -58,20 +58,18 @@ public class DatagramParse {
 //        int re = CRC16.crc16(content);
 //        System.out.println(DateUtil.getCurrentTime() + "CRC 校验结果：" + Integer.toHexString(re).toUpperCase());
 
-        list.add(emblHeader);
-        productService.save(list);
 
         jsonObject = JSONObject.parseObject(new String(content));
 
         // 单独处理遥测数据入库信息
         if (0x00110501 == emblHeader.getDataTypeID()) {
             jsonObject = JSONObject.parseObject(new String(content));
-            TelemetryParametersList parseName = TelemetryParse.parseName(jsonObject);
+            TelemetryParametersList parseName = TelemetryParse.parseName(new String(content));
             parametersService.save(parseName);
         }
         // 单独处理存入阿里的遥测数据
         else if (0x0013FFFF == emblHeader.getDataTypeID()) {
-            TelemetryALiList telemetryALiList = TelemetryParse.parseALiName(jsonObject);
+            TelemetryALiList telemetryALiList = TelemetryParse.parseALiName(new String(content));
             telemetryALiService.save(telemetryALiList);
         }
 
@@ -97,6 +95,9 @@ public class DatagramParse {
 
             String fileName = createFile.createFile("./归档回执原始数据/" + Integer.toHexString(emblHeader.getDataTypeID()) + "/", "dat");
             logtoFile.dataToFile(fileName, data, length, true);
+        } else {
+            list.add(emblHeader);
+            productService.save(list);
         }
     }
 }

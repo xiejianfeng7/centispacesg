@@ -28,16 +28,16 @@ public class MulticastParse implements Runnable {
         boolean isRunning = true;
         while (isRunning) {
             try {
-                // 有数据时直接从队列的队首取走，无数据时阻塞，在2s内有数据，取走，超过2s还没数据，返回失败
                 DatagramPacket packet = queue.poll(2, TimeUnit.SECONDS);
                 if (null != packet) {
-//                    Main.logger.info("拿到数据：" + packet);
+                    long start = System.currentTimeMillis();
+
                     DatagramParse.parseDatagram(packet.getData(), packet.getLength());
+
+                    long end = System.currentTimeMillis();
+//                    System.out.println(DateUtil.getCurrentTime() + " 解析数据耗时：" + (end - start) +
+//                            " 毫秒，队列长度为：" + queue.size());
                 }
-//                else {
-//                    // 超过2s还没数据，认为所有生产线程都已经退出，自动退出消费线程。
-//                    isRunning = false;
-//                }
             } catch (InterruptedException e) {
                 Main.logger.error(Thread.currentThread().getName() + " 运行异常");
             }

@@ -19,25 +19,22 @@ import java.util.Iterator;
 public class TelemetryALiDaoImpl implements TelemetryALiDao {
     // 获取数据库连接
     Connection conn = JDBCUtils.getConnection();
-    Statement stmt;
+    Statement stmt = JDBCUtils.getStatement();
+
     StringBuilder name = new StringBuilder();
     StringBuilder value = new StringBuilder();
-    StringBuilder update = new StringBuilder();
-    String insert;
+    StringBuilder sql = new StringBuilder();
+    static int count = 0;
 
     @Override
     public void save(TelemetryALiList telemetryALiList) {
         String tableName = telemetryALiList.getTablename();
         String option = telemetryALiList.getOpr();
-        update.append("update " + tableName + " set ");
-
         ArrayList<TelemetryALi> paramlist = telemetryALiList.getParamlist();
         Iterator<TelemetryALi> it = paramlist.iterator();
         TelemetryALi telemetryALi;
 
         try {
-            //
-            stmt = conn.createStatement();
             // 插入操作
             if ("insert".equals(option)) {
                 while (it.hasNext()) {
@@ -51,23 +48,32 @@ public class TelemetryALiDaoImpl implements TelemetryALiDao {
                 }
                 name.deleteCharAt(name.length() - 1);
                 value.deleteCharAt(value.length() - 1);
-                insert = "insert into " + tableName + "(" + name + ") values " + "(" + value + ");";
-                System.out.println(insert);
-                stmt.execute(insert);
+                sql.append("insert into " + tableName + "(" + name + ") values " + "(" + value + ");");
             }
             // 更新操作
             else if ("update".equals(option)) {
+                sql.append("update " + tableName + " set ");
                 while (it.hasNext()) {
                     telemetryALi = it.next();
-                    update.append(telemetryALi.getName() + "=\'" + telemetryALi.getValue() + "\',");
+                    sql.append(telemetryALi.getName() + "=\'" + telemetryALi.getValue() + "\',");
                 }
-                update.replace(update.length() - 1, update.length(), ";");
-//                System.out.println(update);
-                stmt.execute(update.toString());
+                sql.replace(sql.length() - 1, sql.length(), ";");
             }
             // 其他处理
             else {
                 System.out.println(telemetryALiList);
+            }
+            // 记录日志
+//            Main.logger.info(sql);
+            // 数据批量入库，攒10条数据入库
+            stmt.addBatch(sql.toString());
+            if (++count % 5 == 0) {
+                long start = System.currentTimeMillis();
+                int[] batch = stmt.executeBatch();
+                long end = System.currentTimeMillis();
+                System.out.println("更新了" + batch.length + "条数据。。count = " + count + "。。耗时：" + (end - start));
+                stmt.clearBatch();
+                count = 0;
             }
         } catch (Exception e) {
             e.printStackTrace();
