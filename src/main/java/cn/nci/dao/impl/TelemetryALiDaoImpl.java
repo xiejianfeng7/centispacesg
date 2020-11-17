@@ -6,6 +6,7 @@ import cn.nci.domain.TelemetryALiList;
 import cn.nci.util.JDBCUtils;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -77,6 +78,14 @@ public class TelemetryALiDaoImpl implements TelemetryALiDao {
             }
         } catch (Exception e) {
             e.printStackTrace();
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
+            }
+            stmt = JDBCUtils.getStatement();
             System.out.println(tableName + "出现异常");
         }
     }

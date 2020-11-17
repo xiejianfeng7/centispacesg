@@ -12,12 +12,13 @@ import java.util.Properties;
  * @date 2020-05-26
  * @time 11:46
  * 原生的数据库连接操作方法
- *
+ * <p>
  * 操作数据库的工具类
  */
 public class JDBCUtils {
     public static Connection connection;
     public static Statement statement;
+
     static {
         Properties properties = new Properties();
         // 使用ClassLoader加载properties配置文件生成对应的输入流
@@ -38,7 +39,6 @@ public class JDBCUtils {
             // 获取数据库连接
             connection = DriverManager.getConnection(url, username, password);
             statement = connection.createStatement();
-
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
@@ -50,6 +50,7 @@ public class JDBCUtils {
 
     /**
      * 获取数据库连接
+     *
      * @return
      */
     public static Connection getConnection() {
@@ -57,7 +58,8 @@ public class JDBCUtils {
     }
 
     /**
-     * 获取批处理对象
+     * 获取Statement
+     *
      * @return
      */
     public static Statement getStatement() {
@@ -67,6 +69,7 @@ public class JDBCUtils {
     /**
      * 关闭数据库连接
      * 参数：Statement是PrepareStatement的父类，可以接收传入的参数
+     *
      * @param conn
      * @param ps
      */
@@ -91,6 +94,7 @@ public class JDBCUtils {
     /**
      * 关闭数据库连接
      * 参数：Statement是PrepareStatement的父类，可以接收传入的参数
+     *
      * @param conn
      * @param ps
      * @param rs
