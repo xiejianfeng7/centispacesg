@@ -1,42 +1,42 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="centispacesg:jar">
+  <artifact type="jar" build-on-make="true" name="centispacesg.jar">
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="centispacesg.jar">
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
       </element>
       <element id="module-output" name="centispacesg" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/springframework/spring-tx/5.0.9.RELEASE/spring-tx-5.0.9.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/commons-net/commons-net/3.5/commons-net-3.5.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/apache/commons/commons-pool2/2.5.0/commons-pool2-2.5.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/com/alibaba/druid/1.1.16/druid-1.1.16.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/cn/hutool/hutool-all/5.3.5/hutool-all-5.3.5.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/springframework/spring-core/5.2.6.RELEASE/spring-core-5.2.6.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/net/sourceforge/javacsv/javacsv/2.0/javacsv-2.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/springframework/spring-jdbc/5.0.9.RELEASE/spring-jdbc-5.0.9.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/com/alibaba/fastjson/1.2.68/fastjson-1.2.68.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/apache/poi/poi/3.14/poi-3.14.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/springframework/spring-jcl/5.2.6.RELEASE/spring-jcl-5.2.6.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/springframework/spring-beans/5.2.6.RELEASE/spring-beans-5.2.6.RELEASE.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/commons-lang/commons-lang/2.3/commons-lang-2.3.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="D:/software/apache/apache-maven-3.6.3/repository/org/springframework/spring-web/5.2.6.RELEASE/spring-web-5.2.6.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/stax/stax-api/1.0.1/stax-api-1.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.3/commons-lang-2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.5.0/commons-pool2-2.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/cn/hutool/hutool-all/5.3.5/hutool-all-5.3.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/poi/poi/3.14/poi-3.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-net/commons-net/3.5/commons-net-3.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.9.RELEASE/spring-tx-5.0.9.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/alibaba/druid/1.1.16/druid-1.1.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.6.RELEASE/spring-beans-5.2.6.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.6.RELEASE/spring-web-5.2.6.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.8.1/commons-lang3-3.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.9.3/commons-beanutils-1.9.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.6.RELEASE/spring-core-5.2.6.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.0.9.RELEASE/spring-jdbc-5.0.9.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-jcl/5.2.6.RELEASE/spring-jcl-5.2.6.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/sourceforge/javacsv/javacsv/2.0/javacsv-2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.68/fastjson-1.2.68.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar" path-in-jar="/" />
       <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.47" />
       <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.68" />
       <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.2" />
