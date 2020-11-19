@@ -30,13 +30,7 @@ public class MulticastParse implements Runnable {
             try {
                 DatagramPacket packet = queue.poll(2, TimeUnit.SECONDS);
                 if (null != packet) {
-                    long start = System.currentTimeMillis();
-
                     DatagramParse.parseDatagram(packet.getData(), packet.getLength());
-
-                    long end = System.currentTimeMillis();
-//                    System.out.println(DateUtil.getCurrentTime() + " 解析数据耗时：" + (end - start) +
-//                            " 毫秒，队列长度为：" + queue.size());
                 }
             } catch (InterruptedException e) {
                 Main.logger.error(Thread.currentThread().getName() + " 运行异常");
