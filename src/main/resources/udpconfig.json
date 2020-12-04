@@ -72,6 +72,6 @@
   "TelemetryALi": {
     "groupHost": "232.100.100.100",
     "port": 10000,
-    "isCreate": 0
+    "isCreate": 1
   }
 }

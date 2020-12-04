@@ -17,8 +17,6 @@ import java.util.concurrent.TimeUnit;
  * @Modified By:
  */
 public class MulticastReceive implements Runnable {
-    // 是否在运行标志
-    private volatile boolean isRunning = true;
     private String groupHost;               // 组播地址
     private int port;                       // 端口号
     private BlockingQueue<DatagramPacket> queue;
@@ -45,15 +43,13 @@ public class MulticastReceive implements Runnable {
                 DatagramPacket datagramPacket = new DatagramPacket(bytes, bytes.length);
                 multicastSocket.receive(datagramPacket);
                 if (!queue.offer(datagramPacket, 60, TimeUnit.SECONDS)) {
-                    Main.logger.error("放入数据失败：" + datagramPacket);
+                    Main.logger.error("放入数据失败，队列中的元素数：" + queue.size());
+                }else {
+                    Main.logger.debug("生产者线程，队列中的元素数：" + queue.size());
                 }
             }
         } catch (Exception e) {
             Main.logger.info("生产者线程出现【异常】，组播地址：" + groupHost + "，端口：" + port);
         }
-    }
-
-    public void stop() {
-        isRunning = false;
     }
 }

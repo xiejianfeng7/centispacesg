@@ -1,6 +1,6 @@
 package cn.nci.socket;
 
-import cn.nci.util.DateUtil;
+import cn.nci.main.Main;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
@@ -24,7 +24,7 @@ public class MulticastSend {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            System.out.println(DateUtil.getCurrentTime() + " send success！");
+            Main.logger.info("数据发送成功，组播地址：" + address + "，端口：" + port);
         }
     }
 }

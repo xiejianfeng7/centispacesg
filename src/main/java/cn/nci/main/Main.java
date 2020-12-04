@@ -32,9 +32,10 @@ public class Main {
 
     // 初始化FTP账号相关信息
     FtpClientUtil clientUtil = null;
+
     {
         try {
-            clientUtil = FtpClientUtil.getInstance("ftpconfig.json","localWorkPath");
+            clientUtil = FtpClientUtil.getInstance("ftpconfig.json", "localWorkPath");
         } catch (Exception e) {
             Main.logger.error("FTP账号配置文件初始化失败。");
         }
@@ -54,7 +55,7 @@ public class Main {
                 BlockingQueue<DatagramPacket> queue = new ArrayBlockingQueue<>(65535);
                 // new 生产者和消费者
                 MulticastReceive multicastReceive = new MulticastReceive(ma.getGroupHost(), ma.getPort(), queue);
-                MulticastParse multicastParse = new MulticastParse(queue);
+                MulticastParse multicastParse = new MulticastParse(ma.getGroupHost(), ma.getPort(), queue);
                 // 启动线程
                 service.execute(multicastReceive);
                 service.execute(multicastParse);

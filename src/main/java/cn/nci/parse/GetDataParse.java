@@ -79,7 +79,6 @@ public class GetDataParse {
             }
             queryCondition.setSatelliteID(satelliteID);
 
-
             object = jsonObject.get("station");
             List<Integer> station = null;
             if (object instanceof Integer) {
@@ -98,7 +97,6 @@ public class GetDataParse {
             queryCondition.setStart(start);
             queryCondition.setEnd(end);
         } catch (Exception e) {
-//            e.printStackTrace();
             Main.logger.error("收到的 JSON 串参数不符合接口要求。");
         }
         return queryCondition;

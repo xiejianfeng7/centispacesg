@@ -3,6 +3,7 @@ package cn.nci.dao.impl;
 import cn.nci.dao.TelemetryALiDao;
 import cn.nci.domain.TelemetryALi;
 import cn.nci.domain.TelemetryALiList;
+import cn.nci.main.Main;
 import cn.nci.util.JDBCUtils;
 
 import java.sql.Connection;
@@ -64,15 +65,13 @@ public class TelemetryALiDaoImpl implements TelemetryALiDao {
             else {
                 System.out.println(telemetryALiList);
             }
-            // 记录日志
-//            Main.logger.info(sql);
             // 数据批量入库，攒10条数据入库
             stmt.addBatch(sql.toString());
             if (++count % 10 == 0) {
                 long start = System.currentTimeMillis();
                 int[] batch = stmt.executeBatch();
                 long end = System.currentTimeMillis();
-                System.out.println("更新了" + batch.length + "条数据。。count = " + count + "。。耗时：" + (end - start));
+                Main.logger.info("更新了" + batch.length + "条数据。。count = " + count + "。。耗时：" + (end - start));
                 stmt.clearBatch();
                 count = 0;
             }
@@ -86,7 +85,7 @@ public class TelemetryALiDaoImpl implements TelemetryALiDao {
                 }
             }
             stmt = JDBCUtils.getStatement();
-            System.out.println(tableName + "出现异常");
+            Main.logger.error(tableName + " 表入库出现异常");
         }
     }
 }

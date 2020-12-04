@@ -38,7 +38,7 @@ public class EMBLInit {
                 }
                 map.put(key, arrayList);
             }
-            Main.logger.info("EMBL包头信息初始化完成。");
+            Main.logger.warn("EMBL包头信息初始化完成。");
             return map;
         }
         return null;

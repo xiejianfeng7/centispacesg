@@ -57,11 +57,6 @@ public class DatagramParse {
             TelemetryParametersList parseName = TelemetryParse.parseName(new String(content));
             parametersService.save(parseName);
         }
-//        // 单独处理存入阿里的遥测数据
-//        else if (0x0013FFFF == emblHeader.getDataTypeID()) {
-//            TelemetryALiList telemetryALiList = TelemetryParse.parseALiName(new String(content));
-//            telemetryALiService.save(telemetryALiList);
-//        }
 
         // 文件获取申请消息
         else if (0x00120101 == emblHeader.getDataTypeID()) {

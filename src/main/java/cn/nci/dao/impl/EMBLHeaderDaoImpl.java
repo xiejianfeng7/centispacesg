@@ -48,7 +48,7 @@ public class EMBLHeaderDaoImpl implements EMBLHeaderDao {
         Date date = WLTimeConvert.getBJTime((int) emblHeader.getDate(), (int) emblHeader.getTime());
         Timestamp timestamp = new Timestamp(date.getTime());
         int update = jdbcTemplate.update(sql, emblHeader.getTaskID(), emblHeader.getDataTypeID(), emblHeader.getDeviceID(), emblHeader.getDate(), emblHeader.getTime(), emblHeader.getRes1(), emblHeader.getDataLength(), emblHeader.getContent(), timestamp);
-        Main.logger.info(" 更新 " + update + " 条数据，数据类型为：" + Integer.toHexString(emblHeader.getDataTypeID()));
+        Main.logger.info("更新 " + update + " 条数据，数据类型为：" + Integer.toHexString(emblHeader.getDataTypeID()));
     }
 
     @Override
