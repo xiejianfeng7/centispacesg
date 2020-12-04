@@ -27,6 +27,10 @@ public class DatagramParse {
         TelemetryParametersService parametersService = new TelemetryParametersServiceImpl();
         List<EMBLHeader> list = new ArrayList<>(100);
 
+        // 文件路径
+        CreateFile createFile = new CreateFile();
+        LogtoFile logtoFile = new LogtoFile();
+
         emblHeader.setTaskID(ByteUtil.readUnsignedIntL(data, 0));
         emblHeader.setDataTypeID(ByteUtil.readIntL(data, 4));
         emblHeader.setDeviceID(ByteUtil.readIntL(data, 8));
@@ -74,10 +78,6 @@ public class DatagramParse {
 
         // 此处记录一期的原始请求，用于测试回放
         else if (0x004D0001 == emblHeader.getDataTypeID() || 0x004D0002 == emblHeader.getDataTypeID() || 0x004D0103 == emblHeader.getDataTypeID() || 0x004D0104 == emblHeader.getDataTypeID()) {
-            // 文件路径
-            CreateFile createFile = new CreateFile();
-            LogtoFile logtoFile = new LogtoFile();
-
             String fileName = createFile.createFile("./归档回执原始数据/" + Integer.toHexString(emblHeader.getDataTypeID()) + "/", "dat");
             logtoFile.dataToFile(fileName, data, length, true);
         } else {
