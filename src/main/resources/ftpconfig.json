@@ -2,7 +2,7 @@
   "ftpHost": "192.168.2.53",
   "ftpPort": "21",
   "module": {
-    "tx": {
+    "tongx": {
       "username": "tongx",
       "password": "tongx"
     },
@@ -10,7 +10,7 @@
       "username": "xians",
       "password": "xians"
     },
-    "dg": {
+    "dingg": {
       "username": "dingg",
       "password": "dingg"
     },
@@ -23,6 +23,6 @@
       "password": "sjgl"
     }
   },
-  "localWorkPath":"D:\\FTP\\"
+  "localWorkPath": "D:\\FTP\\"
 }
 
