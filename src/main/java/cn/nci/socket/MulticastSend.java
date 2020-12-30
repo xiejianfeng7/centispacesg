@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
+import java.net.UnknownHostException;
 
 /**
  * @program: centispacesg
@@ -25,6 +26,15 @@ public class MulticastSend {
             e.printStackTrace();
         } finally {
             Main.logger.info("数据发送成功，组播地址：" + address + "，端口：" + port);
+        }
+    }
+
+    public static void main(String[] args) throws UnknownHostException, InterruptedException {
+        String message = "1234";
+        int length = message.getBytes().length;
+        for (int i = 0; i < 100; i++) {
+            UDPSend(message.getBytes(),length,InetAddress.getByName("231.100.130.2"), 9000);
+            Thread.sleep(1000);
         }
     }
 }
