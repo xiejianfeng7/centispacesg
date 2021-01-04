@@ -61,7 +61,7 @@ public class ProGetRequest {
             getReplyMessage.setMessage(queryCondition.getMessage());
         }
         try {
-            clientUtil = FtpClientUtil.getInstance("src/main/resources/ftpconfig.json", "sjgl");
+            clientUtil = FtpClientUtil.getInstance("ftpconfig.json", "sjgl");
             String ftpHost = "ftp://" + clientUtil.ftpHost + "/";
             for (File file : fileList) {
                 // 此处连接FTP次数与数据文件个数成正比，要优化 2020年8月25日17:54:36
@@ -89,17 +89,17 @@ public class ProGetRequest {
         // 3、给用户发送获取应答消息
         ProFileRequest proFileRequest = new ProFileRequest();
         // 给其他用户发送文件更新消息。
-        SendAddress sendAddress = GetSendAddress.init("src/main/resources/udpsendconfig.json", "GXYD");
+        SendAddress sendAddress = GetSendAddress.init("udpsendconfig.json", "GXYD");
         if (sendAddress != null) {
             String ip = sendAddress.getGroupHost();
             int port = sendAddress.getPort();
             try {
                 Message.getReplyMessage(emblHeader, getReplyMessage, stringBuilder.length() + 9, InetAddress.getByName(ip), port);
             } catch (UnknownHostException e) {
-                Main.logger.error("归档回执发送失败");
+                Main.logger.error("归档回执发送失败3");
             }
         } else {
-            Main.logger.error("归档回执发送失败");
+            Main.logger.error("归档回执发送失败4");
         }
     }
 
@@ -228,7 +228,7 @@ public class ProGetRequest {
 //    }
 
     public static List<File> findFile(EMBLHeader emblHeader, QueryCondition queryCondition) {
-        Map<String, ArrayList> map = Main.map;
+        Map<String, ArrayList> map = Main.EMBL;
 
         List<File> fileList = new ArrayList<>();
         DateTime startTime = new DateTime();

@@ -16,7 +16,7 @@ import java.util.Set;
  * @create: 2020-08-21 10:27
  */
 public class GetSendAddress {
-    public static SendAddress init(String jsonPath,String deviceID) {
+    public static SendAddress init(String jsonPath, String deviceID) {
         SendAddress sendAddress = new SendAddress();
         JSONObject data = null;
         HashMap<String, Object> map = null;
@@ -25,7 +25,7 @@ public class GetSendAddress {
         Iterator<String> it = set.iterator();
         while (it.hasNext()) {
             String tempDeviceID = it.next();
-            if (deviceID.equals(tempDeviceID)){
+            if (deviceID.equals(tempDeviceID)) {
                 data = json.getJSONObject(tempDeviceID);
                 map = JSON.parseObject(String.valueOf(data), HashMap.class);
                 for (String key : map.keySet()) {
@@ -39,10 +39,5 @@ public class GetSendAddress {
             }
         }
         return null;
-    }
-
-    public static void main(String[] args) {
-        SendAddress sendAddress = GetSendAddress.init("udpsendconfig.json", "GBDZ");
-        System.out.println(sendAddress);
     }
 }

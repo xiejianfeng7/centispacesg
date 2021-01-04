@@ -13,8 +13,9 @@ import java.io.File;
 public class FTPTest2 {
     public static void main(String[] args) throws Exception {
 
-        String fileName = "参数配置文件.docx";
-        FtpClientUtil clientUtil = FtpClientUtil.getInstance("ftpconfig.json", "tongx");
+        String fileName = "guihua/0030FF03_CC_202101040002_20200719090429_20200730090650-1.xml";
+//        String fileName = "2021-01-04 13-01.dat";
+        FtpClientUtil clientUtil = FtpClientUtil.getInstance("ftpconfig.json", "0203");
         // 上传
 //        clientUtil.uploadFtpFile(FtpClientUtil.localWorkPath,fileName,"/");
         // 下载

@@ -99,6 +99,7 @@ public class FtpClientUtil {
                 localWorkPath = message.get(key);
             }
         }
+        System.out.println("用户名:" + username + ",密码:" + password);
         return new FtpClientUtil(ftpHost, ftpPort, username, password);
     }
 
@@ -110,7 +111,7 @@ public class FtpClientUtil {
      * @Author: john
      * @Date: 2020/8/6 14:09
      */
-    public void close(){
+    public void close() {
         if (this.ftpClient.isConnected()) {
             try {
                 this.ftpClient.disconnect();
@@ -129,18 +130,19 @@ public class FtpClientUtil {
      * @Author: john
      * @Date: 2020/8/6 14:02
      */
-    public void deleteFile(String sourcePath, String filename) throws Exception {
+    public boolean deleteFile(String sourcePath, String filename) throws Exception {
+        boolean flag = false;
         sourcePath = sourcePath.replace("\\", "/");    // 源文件路径
         try {
-            boolean cd = this.ftpClient.changeWorkingDirectory(new String(sourcePath.getBytes("UTF-8"), this.serverCharset));
+            boolean cd = this.ftpClient.changeWorkingDirectory(new String(sourcePath.getBytes(this.localCharset), this.serverCharset));
             if (!cd) {
                 throw new Exception("切换到上传文件目录失败或者目录不存在！");
             }
-            String[] files = this.ftpClient.listNames();
-            this.ftpClient.deleteFile(new String(filename.getBytes(this.localCharset), this.serverCharset));
+            flag = this.ftpClient.deleteFile(new String(filename.getBytes(this.localCharset), this.serverCharset));
         } catch (Exception e) {
             throw new Exception("删除ftp文件失败，请检查参数配置和ftp服务器状态!");
         }
+        return flag;
     }
 
     /**
@@ -182,32 +184,6 @@ public class FtpClientUtil {
         }
     }
 
-    /**
-     * 功能描述: 下载文件
-     *
-     * @Param: [sourcePath:要下载的文件所在FTP服务器中路径, filename:要下载的文件名, localWorkPath:本地存放路径]
-     * @Return: void
-     * @Author: john
-     * @Date: 2020/8/6 14:18
-     */
-//    public void downLoadFile(String sourcePath, String filename, String localWorkPath) throws Exception {
-//        File src = downLoadFile(sourcePath, filename);
-//        File dest = new File(localWorkPath + filename);
-//        FileInputStream fio = new FileInputStream(src);
-//        BufferedInputStream bio = new BufferedInputStream(fio);
-//        FileOutputStream fos = new FileOutputStream(dest);
-//        BufferedOutputStream bos = new BufferedOutputStream(fos);
-//        byte buffer[] = new byte[65535];
-//        int length;
-//        while ((length = bio.read(buffer)) != -1) {
-//            bos.write(buffer, 0, length);
-//        }
-//        bos.flush();
-//        bos.close();
-//        fos.close();
-//        bio.close();
-//        fio.close();
-//    }
 
     /**
      * 功能描述: 上传文件

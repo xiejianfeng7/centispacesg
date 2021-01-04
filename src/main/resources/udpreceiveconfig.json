@@ -1,7 +1,7 @@
 {
   "address1": {
-    "groupHost": "232.4.1.2",
-    "port": 8001,
+    "groupHost": "231.100.110.3",
+    "port": 9000,
     "isCreate": 0
   },
   "TelemetryParameters": {
@@ -71,6 +71,11 @@
   },
   "TelemetryALi": {
     "groupHost": "231.100.130.2",
+    "port": 8000,
+    "isCreate": 0
+  },
+  "各子系统存库数据+归档文件": {
+    "groupHost": "231.100.110.3",
     "port": 8000,
     "isCreate": 1
   }

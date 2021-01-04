@@ -67,7 +67,7 @@ public class FindFileNewTest {
 
     // 00220011/503/514/2020/08/<数据类型>_<业务类型>_<源地址>_<开始时间串>_<结束时间串>.txt
     public static List<File> findFile(QueryCondition queryCondition) {
-        Map<String, ArrayList> map = Main.map;
+        Map<String, ArrayList> map = Main.EMBL;
 
         List<File> fileList = new ArrayList<>();
         DateTime startTime = null;

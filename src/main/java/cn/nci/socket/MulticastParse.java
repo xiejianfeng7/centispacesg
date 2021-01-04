@@ -32,7 +32,7 @@ public class MulticastParse implements Runnable {
         while (true) {
             try {
                 DatagramPacket packet = queue.poll(2, TimeUnit.SECONDS);
-                Main.logger.debug("消费者线程，队列中的元素数：" + queue.size());
+//                Main.logger.debug("消费者线程，队列中的元素数：" + queue.size());
                 if (null != packet) {
                     DatagramParse.parseDatagram(packet.getData(), packet.getLength());
                 }

@@ -46,7 +46,7 @@ public class Message {
      */
     public static void fileArchiveMessage(EMBLHeader emblHeader, FileArchiveMessage fileArchiveMessage, byte response, InetAddress address, int port) {
         byte[] sendPackage = new byte[65535];
-        byte[] fillEMBLMessageHeader = fillEMBLMessageHeader(emblHeader.getTaskID(), 0x00120202, 7);
+        byte[] fillEMBLMessageHeader = fillEMBLMessageHeader(emblHeader.getTaskID(), 0x00130202, 7);
         System.arraycopy(fillEMBLMessageHeader, 0, sendPackage, 0, 28);
         ByteUtil.writeIntL(sendPackage, fileArchiveMessage.getDataType(), 28);
         sendPackage[32] = response;
@@ -64,7 +64,7 @@ public class Message {
      */
     public static void fileUpdateMessage(EMBLHeader emblHeader, FileArchiveMessage fileArchiveMessage, String fileName, InetAddress address, int port) {
         byte[] sendPackage = new byte[65535];
-        byte[] fillEMBLMessageHeader = fillEMBLMessageHeader(emblHeader.getTaskID(), 0x00120203, 4 + fileName.length());
+        byte[] fillEMBLMessageHeader = fillEMBLMessageHeader(emblHeader.getTaskID(), 0x00130203, 4 + fileName.length());
         System.arraycopy(fillEMBLMessageHeader, 0, sendPackage, 0, 28);
         ByteUtil.writeIntL(sendPackage, fileArchiveMessage.getDataType(), 28);
         ByteUtil.writeString(sendPackage, 32, fileName);

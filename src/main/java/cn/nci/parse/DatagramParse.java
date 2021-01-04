@@ -45,16 +45,22 @@ public class DatagramParse {
             return;
         }
         // 如果任务标识为8个F的话，入库失败，原因是8个F解析后超出int的表示范围。
-//        if (emblHeader.getTaskID() == -1){
-//            emblHeader.setTaskID(0L);
-//        }
+        if (emblHeader.getTaskID() == -1) {
+            emblHeader.setTaskID(0L);
+        }
         byte[] content = new byte[emblHeader.getDataLength()];
         System.arraycopy(data, 28, content, 0, emblHeader.getDataLength());
         emblHeader.setContent(content);
 
-        // CRC校验 2020年9月3日17:14:11
-//        int re = CRC16.crc16(content);
-//        System.out.println(DateUtil.getCurrentTime() + "CRC 校验结果：" + Integer.toHexString(re).toUpperCase());
+
+        // 此处记录一期的原始请求，用于测试回放
+        if (0x00130101 == emblHeader.getDataTypeID() || 0x00130102 == emblHeader.getDataTypeID() || 0x00130201 == emblHeader.getDataTypeID() || 0x00130202 == emblHeader.getDataTypeID()) {
+            String fileName = createFile.createFile("./归档回执原始数据/" + Integer.toHexString(emblHeader.getDataTypeID()) + "/", "dat");
+            logtoFile.dataToFile(fileName, data, length, true);
+        } else {
+            list.add(emblHeader);
+            productService.save(list);
+        }
 
         // 单独处理遥测数据入库信息
         if (0x00110501 == emblHeader.getDataTypeID()) {
@@ -63,7 +69,7 @@ public class DatagramParse {
         }
 
         // 文件获取申请消息
-        else if (0x00120101 == emblHeader.getDataTypeID()) {
+        else if (0x00130101 == emblHeader.getDataTypeID()) {
             // 用户发送数据获取申请，根据获取请求，解析获取的JSON字符串
             ProGetRequest proGetRequest = new ProGetRequest();
             proGetRequest.getFile(emblHeader);
@@ -71,18 +77,9 @@ public class DatagramParse {
         }
 
         // 文件归档申请消息
-        else if (0x00120102 == emblHeader.getDataTypeID()) {
+        else if (0x00130102 == emblHeader.getDataTypeID()) {
             ProFileRequest proFileRequest = new ProFileRequest();
             proFileRequest.file(emblHeader);
-        }
-
-        // 此处记录一期的原始请求，用于测试回放
-        else if (0x004D0001 == emblHeader.getDataTypeID() || 0x004D0002 == emblHeader.getDataTypeID() || 0x004D0103 == emblHeader.getDataTypeID() || 0x004D0104 == emblHeader.getDataTypeID()) {
-            String fileName = createFile.createFile("./归档回执原始数据/" + Integer.toHexString(emblHeader.getDataTypeID()) + "/", "dat");
-            logtoFile.dataToFile(fileName, data, length, true);
-        } else {
-            list.add(emblHeader);
-            productService.save(list);
         }
     }
 }

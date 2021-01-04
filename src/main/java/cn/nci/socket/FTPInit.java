@@ -17,6 +17,7 @@ import java.util.Set;
  */
 public class FTPInit {
     public static Map<String, String> init(String jsonPath, String moduleName) {
+        System.out.println(moduleName);
         HashMap<String, String> map = new HashMap<>();
         if (ReadJson.getJson(jsonPath) != null) {
             JSONObject json = JSONObject.parseObject(ReadJson.getJson(jsonPath));
@@ -32,7 +33,7 @@ public class FTPInit {
                     Iterator<String> moudleIt = moudleSet.iterator();
                     while (moudleIt.hasNext()) {
                         String moudleKey = moudleIt.next();
-                        if (moduleName == moudleKey) {
+                        if (moduleName.equals(moudleKey)) {
                             map.putAll(JSON.parseObject(String.valueOf(moudle.getString(moudleKey)), HashMap.class));
                         }
                     }
